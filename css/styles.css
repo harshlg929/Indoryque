@@ -219,6 +219,23 @@ a:hover {
   background: #0099cc;
 }
 
+
+#internship h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#internship iframe {
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
+  transition: transform 0.3s ease;
+}
+
+#internship iframe:hover {
+  transform: scale(1.01);
+}
+
+
 /* ===============================
    FOOTER
 ================================ */
