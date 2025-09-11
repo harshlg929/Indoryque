@@ -1,11 +1,12 @@
 /* ===========================
    VARIABLES
 =========================== */
-$bg-dark: #000;
-$bg-card: #121212;
-$text-light: #eaeaea;
-$text-muted: #aaa;
-$heading-color: #fff;
+$bg-black: #000;
+$bg-dark: #0d0d0d;
+$bg-card: #1e1e1e;
+$text-light: #f1f1f1;
+$text-muted: #cccccc;
+$heading: #ffffff;
 $accent: #00bfff;
 $accent-hover: #009acd;
 
@@ -17,9 +18,11 @@ $accent-hover: #009acd;
 }
 
 @mixin section-heading {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  position: relative;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: $heading;
 
   &::after {
     content: "";
@@ -37,50 +40,34 @@ $accent-hover: #009acd;
 =========================== */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $bg-dark;
+  background: $bg-dark;
   color: $text-light;
   line-height: 1.7;
 }
 
-.text-sky { color: $accent !important; }
-
 h1, h2, h3, h4, h5, h6 {
-  color: $heading-color;
+  color: $heading;
   font-weight: 600;
 }
 
-/* ===========================
-   BUTTONS
-=========================== */
-.btn-sky {
-  background: $accent;
-  color: $bg-dark !important;
-  font-weight: 600;
-  border-radius: 50px;
-  padding: 10px 25px;
-  @include transition;
+p { color: $text-muted; }
 
-  &:hover {
-    background: $accent-hover;
-    color: $heading-color !important;
-    box-shadow: 0 6px 15px rgba($accent, 0.3);
-    transform: translateY(-3px);
-  }
-}
+.text-sky { color: $accent !important; }
 
 /* ===========================
    NAVBAR
 =========================== */
 .navbar {
-  background-color: rgba($bg-dark, 0.95) !important;
+  background-color: rgba($bg-black, 0.95) !important;
+  padding: 15px;
 
   .nav-link {
     color: #bbb !important;
     margin: 0 10px;
+    font-weight: 500;
     @include transition;
 
-    &.active,
-    &:hover {
+    &:hover, &.active {
       color: $accent !important;
     }
   }
@@ -90,48 +77,85 @@ h1, h2, h3, h4, h5, h6 {
    HERO
 =========================== */
 #hero {
-  h1 { text-shadow: 0 0 15px rgba($accent, 0.4); }
-  p { color: #ccc; }
+  background: linear-gradient(135deg, #000, #001a26);
+  padding: 100px 0;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 15px rgba($accent, 0.4);
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $text-muted;
+  }
 }
 
 /* ===========================
    SECTIONS
 =========================== */
 section {
-  h2 { @include section-heading; }
+  padding: 70px 0;
+
+  h2 {
+    @include section-heading;
+  }
 }
 
 /* ===========================
-   CARDS
+   CARDS (Services, Case Studies, Team)
 =========================== */
-.card,
-#case-studies .p-4,
-#team .p-4 {
-  background-color: $bg-card !important;
-  color: $text-light;
-  border: 1px solid #222;
+.card {
+  background: $bg-card !important;
+  border: 1px solid #2a2a2a;
+  color: $text-light !important;
   border-radius: 16px;
+  padding: 20px;
+  text-align: center;
   @include transition;
 
+  h5 {
+    color: $accent !important;
+    font-weight: 600;
+  }
+
+  p {
+    color: $text-muted !important;
+  }
+
+  i {
+    font-size: 2.2rem;
+    color: $accent;
+    margin-bottom: 12px;
+  }
+
   &:hover {
+    background: #2a2a2a !important;
     transform: translateY(-6px);
     box-shadow: 0 8px 20px rgba($accent, 0.25);
   }
-
-  h5 { color: $accent; }
 }
 
 /* ===========================
    ABOUT
 =========================== */
-#about p { color: #ccc; }
+#about {
+  background: $bg-black;
+
+  p {
+    color: $text-muted;
+  }
+}
 
 /* ===========================
    INDUSTRIES
 =========================== */
 #industries {
+  background: $bg-black;
+
   h5 {
-    color: $heading-color;
+    color: $heading;
     font-weight: 500;
   }
 
@@ -143,17 +167,96 @@ section {
 }
 
 /* ===========================
+   SUCCESS STORIES
+=========================== */
+#case-studies {
+  background: $bg-card;
+
+  .p-4 {
+    background: $bg-dark;
+    border-radius: 12px;
+    color: $text-light;
+    @include transition;
+
+    &:hover {
+      background: #2a2a2a;
+      box-shadow: 0 8px 20px rgba($accent, 0.2);
+    }
+
+    h5 {
+      color: $accent;
+    }
+
+    p {
+      color: $text-muted;
+    }
+  }
+}
+
+/* ===========================
+   TEAM
+=========================== */
+#team .card {
+  background: $bg-card;
+  color: $text-light;
+}
+
+/* ===========================
+   CTA SECTION
+=========================== */
+#cta {
+  background: linear-gradient(135deg, #00111a, #002a40);
+  text-align: center;
+
+  h2 {
+    color: $heading;
+  }
+
+  p {
+    color: $text-muted;
+  }
+}
+
+/* ===========================
    CONTACT
 =========================== */
 #contact {
+  background: $bg-card;
+
+  h2 {
+    color: $heading;
+  }
+
+  label {
+    color: $text-muted;
+  }
+
   input,
   textarea {
-    background-color: $bg-card !important;
+    background: $bg-dark !important;
     border: 1px solid #333 !important;
-    color: $heading-color !important;
+    color: $text-light !important;
     border-radius: 10px;
+    padding: 10px;
 
-    &::placeholder { color: #777; }
+    &::placeholder {
+      color: #777 !important;
+    }
+  }
+
+  button {
+    background: $accent;
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 25px;
+    @include transition;
+
+    &:hover {
+      background: $accent-hover;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
+    }
   }
 }
 
@@ -161,15 +264,22 @@ section {
    FOOTER
 =========================== */
 footer {
-  background-color: $bg-dark;
+  background: $bg-black;
+  padding: 40px 0;
   color: $text-muted;
 
-  h5, h6 { color: $accent; }
+  h5, h6 {
+    color: $accent;
+    font-weight: 600;
+  }
 
   a {
     color: #999;
+    text-decoration: none;
     @include transition;
 
-    &:hover { color: $accent; }
+    &:hover {
+      color: $accent;
+    }
   }
 }
