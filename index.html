@@ -7,8 +7,6 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
@@ -28,9 +26,9 @@
           <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -42,10 +40,10 @@
     style="min-height:100vh; background:linear-gradient(135deg, #000 50%, #001f33 100%);">
     <div class="container">
       <h1 class="display-3 fw-bold mb-3">Indoryque Global Systems</h1>
-      <p class="lead text-sky">Where Innovation Never Ends</p>
-      <p class="mb-4">We build modern, scalable and intelligent software solutions for your business success.</p>
-      <a href="#services" class="btn btn-sky btn-lg me-3">Our Services</a>
-      <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+      <p class="lead text-sky" id="typed-text">Where Innovation Never Ends</p>
+      <p class="mb-4">We craft intelligent, scalable, and impactful technology solutions that redefine possibilities.</p>
+      <a href="#services" class="btn btn-sky btn-lg me-3">Explore Services</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Work With Us</a>
     </div>
   </section>
 
@@ -53,8 +51,18 @@
   <section id="about" class="py-5 bg-black">
     <div class="container text-center">
       <h2 class="fw-bold text-sky mb-4">About Us</h2>
-      <p class="text-muted">Indoryque is a software company passionate about turning bold ideas into real-world technology. 
-        Our team delivers innovative solutions across web, mobile, and cloud — empowering businesses to thrive in the digital era.</p>
+      <p>At Indoryque, we believe technology is not just about code—it’s about transformation. 
+        From startups to enterprises, we help businesses achieve agility, efficiency, and innovation.</p>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h5 class="text-sky"><i class="bi bi-eye me-2"></i> Our Vision</h5>
+          <p>To be a global leader in digital solutions, driving innovation with integrity and impact.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-sky"><i class="bi bi-bullseye me-2"></i> Our Mission</h5>
+          <p>Empowering businesses with cutting-edge technology that is secure, scalable, and sustainable.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -67,87 +75,114 @@
           <div class="card bg-black border-0 shadow p-4 h-100">
             <i class="bi bi-code-slash display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Web Development</h5>
-            <p>Custom, responsive, and scalable websites designed for performance and growth.</p>
+            <p>Custom websites & portals with modern frameworks and responsive design.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card bg-black border-0 shadow p-4 h-100">
             <i class="bi bi-phone display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Mobile Apps</h5>
-            <p>Seamless mobile experiences on iOS and Android with high user engagement.</p>
+            <p>Native & hybrid apps delivering seamless user experiences.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card bg-black border-0 shadow p-4 h-100">
             <i class="bi bi-cloud-check display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Cloud Solutions</h5>
-            <p>Reliable, secure cloud infrastructure and DevOps services for enterprises.</p>
+            <p>Secure and scalable cloud hosting, migration & DevOps services.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-black border-0 shadow p-4 h-100">
+            <i class="bi bi-shield-lock display-4 text-sky mb-3"></i>
+            <h5 class="fw-bold">Cybersecurity</h5>
+            <p>Protecting your business with cutting-edge security practices.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-black border-0 shadow p-4 h-100">
+            <i class="bi bi-robot display-4 text-sky mb-3"></i>
+            <h5 class="fw-bold">AI & Automation</h5>
+            <p>Boost efficiency with AI-powered business automation and analytics.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-black border-0 shadow p-4 h-100">
+            <i class="bi bi-cart-check display-4 text-sky mb-3"></i>
+            <h5 class="fw-bold">E-Commerce</h5>
+            <p>Complete e-commerce solutions from storefront to payment integration.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Solutions -->
-  <section id="solutions" class="py-5 bg-black">
+  <!-- Industries -->
+  <section id="industries" class="py-5 bg-black">
     <div class="container">
-      <h2 class="fw-bold text-center text-sky mb-5">Our Solutions</h2>
+      <h2 class="fw-bold text-center text-sky mb-5">Industries We Serve</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3"><h5><i class="bi bi-heart-pulse text-sky"></i> Healthcare</h5></div>
+        <div class="col-md-3"><h5><i class="bi bi-cash-stack text-sky"></i> FinTech</h5></div>
+        <div class="col-md-3"><h5><i class="bi bi-book text-sky"></i> Education</h5></div>
+        <div class="col-md-3"><h5><i class="bi bi-truck text-sky"></i> Logistics</h5></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="case-studies" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center text-sky mb-5">Success Stories</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="p-4 border rounded bg-dark h-100">
-            <h5 class="fw-bold text-sky"><i class="bi bi-lightbulb me-2"></i>Innovation First</h5>
-            <p>We stay ahead with modern frameworks, AI, and automation to keep your business future-ready.</p>
+          <div class="p-4 bg-dark rounded shadow h-100">
+            <h5 class="text-sky">E-Commerce Growth</h5>
+            <p>Helped an online retailer increase sales by 120% with a new mobile-first platform.</p>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="p-4 border rounded bg-dark h-100">
-            <h5 class="fw-bold text-sky"><i class="bi bi-shield-lock me-2"></i>Security & Reliability</h5>
-            <p>Our systems are built with enterprise-grade security and maximum uptime in mind.</p>
+          <div class="p-4 bg-dark rounded shadow h-100">
+            <h5 class="text-sky">FinTech Automation</h5>
+            <p>Automated financial workflows for a startup, reducing processing time by 60%.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section id="why" class="py-5">
+  <!-- Team -->
+  <section id="team" class="py-5 bg-black">
     <div class="container text-center">
-      <h2 class="fw-bold text-sky mb-4">Why Choose Us?</h2>
+      <h2 class="fw-bold text-sky mb-5">Meet Our Team</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <h1 class="text-sky">10+</h1>
-          <p>Years of Experience</p>
+          <div class="p-4 bg-dark rounded shadow">
+            <h5 class="fw-bold">Harsh Gupta</h5>
+            <p class="text-muted">Founder & CEO</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h1 class="text-sky">50+</h1>
-          <p>Projects Delivered</p>
+          <div class="p-4 bg-dark rounded shadow">
+            <h5 class="fw-bold">Aditi Sharma</h5>
+            <p class="text-muted">CTO</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h1 class="text-sky">100%</h1>
-          <p>Client Satisfaction</p>
+          <div class="p-4 bg-dark rounded shadow">
+            <h5 class="fw-bold">Raj Mehta</h5>
+            <p class="text-muted">Lead Developer</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-5 bg-black">
+  <!-- CTA Banner -->
+  <section class="py-5 text-center" style="background:linear-gradient(135deg,#001f33,#000);">
     <div class="container">
-      <h2 class="fw-bold text-center text-sky mb-5">What Our Clients Say</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="p-4 bg-dark rounded shadow h-100">
-            <p>"Indoryque delivered our project ahead of schedule with outstanding quality. Their team is professional and creative."</p>
-            <h6 class="text-sky mt-3">— Rahul Sharma, CEO TechWorks</h6>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-4 bg-dark rounded shadow h-100">
-            <p>"The mobile app they developed boosted our customer engagement by 70%. Highly recommend their services!"</p>
-            <h6 class="text-sky mt-3">— Priya Mehta, Founder StartupHub</h6>
-          </div>
-        </div>
-      </div>
+      <h2 class="fw-bold">Let’s Build Something Great Together</h2>
+      <a href="#contact" class="btn btn-sky btn-lg mt-3">Contact Us Today</a>
     </div>
   </section>
 
@@ -177,18 +212,61 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-center py-4">
+  <footer class="bg-black text-center py-5">
     <div class="container">
-      <p class="mb-1">&copy; 2025 Indoryque Global Systems. All Rights Reserved.</p>
-      <div>
-        <a href="#" class="text-sky me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-sky me-3"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="text-sky"><i class="bi bi-linkedin"></i></a>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="text-sky">Indoryque</h5>
+          <p>Where innovation never ends.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>Quick Links</h6>
+          <a href="#about" class="d-block text-muted">About</a>
+          <a href="#services" class="d-block text-muted">Services</a>
+          <a href="#industries" class="d-block text-muted">Industries</a>
+        </div>
+        <div class="col-md-4">
+          <h6>Newsletter</h6>
+          <input type="email" class="form-control bg-dark text-light border-0 mb-2" placeholder="Enter your email">
+          <button class="btn btn-sky btn-sm">Subscribe</button>
+        </div>
       </div>
+      <p class="mt-4">&copy; 2025 Indoryque Global Systems. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Typing Effect -->
+  <script>
+    const text = ["Where Innovation Never Ends", "Transforming Ideas into Reality", "Your Digital Growth Partner"];
+    let i = 0;
+    let j = 0;
+    let current = "";
+    let isDeleting = false;
+
+    function type() {
+      current = text[i];
+      let display = current.substring(0, j);
+      document.getElementById("typed-text").innerHTML = display;
+
+      if (!isDeleting && j < current.length) {
+        j++;
+      } else if (isDeleting && j > 0) {
+        j--;
+      }
+
+      if (j === current.length) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+        return;
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % text.length;
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+    type();
+  </script>
 </body>
 </html>
