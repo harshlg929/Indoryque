@@ -1,285 +1,236 @@
-/* ===========================
-   VARIABLES
-=========================== */
-$bg-black: #000;
-$bg-dark: #0d0d0d;
-$bg-card: #1e1e1e;
-$text-light: #f1f1f1;
-$text-muted: #cccccc;
-$heading: #ffffff;
-$accent: #00bfff;
-$accent-hover: #009acd;
-
-/* ===========================
-   MIXINS
-=========================== */
-@mixin transition($time: 0.3s) {
-  transition: all $time ease;
-}
-
-@mixin section-heading {
-  font-size: 2.2rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2.5rem;
-  color: $heading;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 70px;
-    background: $accent;
-    margin: 12px auto 0;
-    border-radius: 3px;
-  }
-}
-
-/* ===========================
-   GLOBAL
-=========================== */
+/* ===============================
+   GLOBAL STYLES
+================================ */
 body {
-  font-family: "Poppins", sans-serif;
-  background: $bg-dark;
-  color: $text-light;
-  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $heading;
+  color: #ffffff;
   font-weight: 600;
 }
 
-p { color: $text-muted; }
+p {
+  color: #cccccc;
+}
 
-.text-sky { color: $accent !important; }
+a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #66d9ff;
+}
 
-/* ===========================
+/* ===============================
    NAVBAR
-=========================== */
+================================ */
 .navbar {
-  background-color: rgba($bg-black, 0.95) !important;
-  padding: 15px;
-
-  .nav-link {
-    color: #bbb !important;
-    margin: 0 10px;
-    font-weight: 500;
-    @include transition;
-
-    &:hover, &.active {
-      color: $accent !important;
-    }
-  }
+  background: #000 !important;
+  padding: 12px 20px;
 }
 
-/* ===========================
-   HERO
-=========================== */
-#hero {
-  background: linear-gradient(135deg, #000, #001a26);
-  padding: 100px 0;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00bfff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  margin: 0 10px;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  color: #00bfff !important;
+}
+
+/* ===============================
+   HERO / HEADER
+================================ */
+.hero {
+  background: linear-gradient(to right, #0d0d0d, #1c1c1c);
+  color: #fff;
   text-align: center;
-
-  h1 {
-    font-size: 3rem;
-    text-shadow: 0 0 15px rgba($accent, 0.4);
-  }
-
-  p {
-    font-size: 1.2rem;
-    color: $text-muted;
-  }
+  padding: 120px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #cccccc;
 }
 
-/* ===========================
-   SECTIONS
-=========================== */
-section {
-  padding: 70px 0;
-
-  h2 {
-    @include section-heading;
-  }
-}
-
-/* ===========================
-   CARDS (Services, Case Studies, Team)
-=========================== */
-.card {
-  background: $bg-card !important;
-  border: 1px solid #2a2a2a;
-  color: $text-light !important;
-  border-radius: 16px;
-  padding: 20px;
-  text-align: center;
-  @include transition;
-
-  h5 {
-    color: $accent !important;
-    font-weight: 600;
-  }
-
-  p {
-    color: $text-muted !important;
-  }
-
-  i {
-    font-size: 2.2rem;
-    color: $accent;
-    margin-bottom: 12px;
-  }
-
-  &:hover {
-    background: #2a2a2a !important;
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba($accent, 0.25);
-  }
-}
-
-/* ===========================
-   ABOUT
-=========================== */
+/* ===============================
+   ABOUT US
+================================ */
 #about {
-  background: $bg-black;
-
-  p {
-    color: $text-muted;
-  }
-}
-
-/* ===========================
-   INDUSTRIES
-=========================== */
-#industries {
-  background: $bg-black;
-
-  h5 {
-    color: $heading;
-    font-weight: 500;
-  }
-
-  i {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: $accent;
-  }
-}
-
-/* ===========================
-   SUCCESS STORIES
-=========================== */
-#case-studies {
-  background: $bg-card;
-
-  .p-4 {
-    background: $bg-dark;
-    border-radius: 12px;
-    color: $text-light;
-    @include transition;
-
-    &:hover {
-      background: #2a2a2a;
-      box-shadow: 0 8px 20px rgba($accent, 0.2);
-    }
-
-    h5 {
-      color: $accent;
-    }
-
-    p {
-      color: $text-muted;
-    }
-  }
-}
-
-/* ===========================
-   TEAM
-=========================== */
-#team .card {
-  background: $bg-card;
-  color: $text-light;
-}
-
-/* ===========================
-   CTA SECTION
-=========================== */
-#cta {
-  background: linear-gradient(135deg, #00111a, #002a40);
+  background: #111;
+  padding: 80px 20px;
   text-align: center;
-
-  h2 {
-    color: $heading;
-  }
-
-  p {
-    color: $text-muted;
-  }
+}
+#about p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #cccccc;
+}
+#about .icon-box {
+  margin-top: 20px;
+}
+#about .icon-box i {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 10px;
 }
 
-/* ===========================
+/* ===============================
+   SERVICES
+================================ */
+#services {
+  background: #0d0d0d;
+  padding: 80px 20px;
+}
+#services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#services .card {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  color: #e0e0e0;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+#services .card i {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #00bfff;
+}
+
+#services .card h5 {
+  color: #00bfff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#services .card p {
+  color: #cccccc;
+}
+
+#services .card:hover {
+  background: #262626;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
+}
+
+/* ===============================
+   INDUSTRIES
+================================ */
+#industries {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+#industries i {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+#industries p {
+  color: #cccccc;
+}
+
+/* ===============================
+   SUCCESS STORIES
+================================ */
+#success {
+  background: #0d0d0d;
+  padding: 80px 20px;
+}
+#success .card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #e0e0e0;
+  padding: 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+#success .card:hover {
+  background: #222;
+  box-shadow: 0 6px 16px rgba(0, 191, 255, 0.2);
+}
+
+/* ===============================
+   TEAM
+================================ */
+#team {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+#team .card {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  padding: 25px;
+  border-radius: 12px;
+  color: #e0e0e0;
+}
+#team .card h5 {
+  color: #00bfff;
+}
+
+/* ===============================
    CONTACT
-=========================== */
+================================ */
 #contact {
-  background: $bg-card;
-
-  h2 {
-    color: $heading;
-  }
-
-  label {
-    color: $text-muted;
-  }
-
-  input,
-  textarea {
-    background: $bg-dark !important;
-    border: 1px solid #333 !important;
-    color: $text-light !important;
-    border-radius: 10px;
-    padding: 10px;
-
-    &::placeholder {
-      color: #777 !important;
-    }
-  }
-
-  button {
-    background: $accent;
-    color: #000;
-    font-weight: 600;
-    border-radius: 50px;
-    padding: 10px 25px;
-    @include transition;
-
-    &:hover {
-      background: $accent-hover;
-      color: #fff;
-      box-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
-    }
-  }
+  background: #0d0d0d;
+  padding: 80px 20px;
+}
+#contact form input,
+#contact form textarea {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+}
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #888;
+}
+#contact button {
+  background: #00bfff;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+#contact button:hover {
+  background: #0099cc;
 }
 
-/* ===========================
+/* ===============================
    FOOTER
-=========================== */
+================================ */
 footer {
-  background: $bg-black;
-  padding: 40px 0;
-  color: $text-muted;
-
-  h5, h6 {
-    color: $accent;
-    font-weight: 600;
-  }
-
-  a {
-    color: #999;
-    text-decoration: none;
-    @include transition;
-
-    &:hover {
-      color: $accent;
-    }
-  }
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #00bfff;
+}
+footer a:hover {
+  color: #66d9ff;
 }
