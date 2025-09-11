@@ -1,26 +1,175 @@
-/* Sky blue theme */
-.text-sky {
-  color: #00bfff !important;
+/* ===========================
+   VARIABLES
+=========================== */
+$bg-dark: #000;
+$bg-card: #121212;
+$text-light: #eaeaea;
+$text-muted: #aaa;
+$heading-color: #fff;
+$accent: #00bfff;
+$accent-hover: #009acd;
+
+/* ===========================
+   MIXINS
+=========================== */
+@mixin transition($time: 0.3s) {
+  transition: all $time ease;
 }
 
+@mixin section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 70px;
+    background: $accent;
+    margin: 12px auto 0;
+    border-radius: 3px;
+  }
+}
+
+/* ===========================
+   GLOBAL
+=========================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $bg-dark;
+  color: $text-light;
+  line-height: 1.7;
+}
+
+.text-sky { color: $accent !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-weight: 600;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
 .btn-sky {
-  background-color: #00bfff;
-  color: #fff;
-  border: none;
-  transition: 0.3s ease-in-out;
+  background: $accent;
+  color: $bg-dark !important;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 25px;
+  @include transition;
+
+  &:hover {
+    background: $accent-hover;
+    color: $heading-color !important;
+    box-shadow: 0 6px 15px rgba($accent, 0.3);
+    transform: translateY(-3px);
+  }
 }
 
-.btn-sky:hover {
-  background-color: #009acd;
-  color: #fff;
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+  background-color: rgba($bg-dark, 0.95) !important;
+
+  .nav-link {
+    color: #bbb !important;
+    margin: 0 10px;
+    @include transition;
+
+    &.active,
+    &:hover {
+      color: $accent !important;
+    }
+  }
 }
 
-/* Navbar link hover */
-.nav-link:hover {
-  color: #00bfff !important;
+/* ===========================
+   HERO
+=========================== */
+#hero {
+  h1 { text-shadow: 0 0 15px rgba($accent, 0.4); }
+  p { color: #ccc; }
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* ===========================
+   SECTIONS
+=========================== */
+section {
+  h2 { @include section-heading; }
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card,
+#case-studies .p-4,
+#team .p-4 {
+  background-color: $bg-card !important;
+  color: $text-light;
+  border: 1px solid #222;
+  border-radius: 16px;
+  @include transition;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba($accent, 0.25);
+  }
+
+  h5 { color: $accent; }
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+#about p { color: #ccc; }
+
+/* ===========================
+   INDUSTRIES
+=========================== */
+#industries {
+  h5 {
+    color: $heading-color;
+    font-weight: 500;
+  }
+
+  i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: $accent;
+  }
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+#contact {
+  input,
+  textarea {
+    background-color: $bg-card !important;
+    border: 1px solid #333 !important;
+    color: $heading-color !important;
+    border-radius: 10px;
+
+    &::placeholder { color: #777; }
+  }
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background-color: $bg-dark;
+  color: $text-muted;
+
+  h5, h6 { color: $accent; }
+
+  a {
+    color: #999;
+    @include transition;
+
+    &:hover { color: $accent; }
+  }
 }
