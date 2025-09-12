@@ -26,7 +26,7 @@
 
     /* Hero section background glow */
     .hero-glow-bg {
-        background: radial-gradient(circle at 50% 50%, rgba(13, 148, 255, 0.1), rgba(13, 148, 255, 0.05), transparent);
+        background: radial-gradient(circle at 50% 50%, rgba(13, 148, 255, 0.1), rgba(13, 148, 255, 0.05));
     }
     
     /* Glowing card effect */
@@ -82,7 +82,6 @@
       <a class="flex items-center space-x-2 text-xl font-extrabold text-white transition-transform duration-300 transform hover:scale-105" href="#">
         <!-- Logo from your root directory -->
         <img src="logo1.jpg" alt="Indoryque Global Logo" class="h-16 w-auto rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Logo';" />
-        <span class="hidden md:block">Indoryque Global</span>
       </a>
       <div class="hidden md:flex items-center space-x-6 text-white font-medium">
         <a href="#home" class="hover:text-[#0d94ff] transition-colors">Home</a>
@@ -318,27 +317,30 @@
 
   <!-- Internship Section -->
   <section id="internship" class="py-20 md:py-32 animate-on-scroll">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0d94ff] mb-6">Internship Opportunity</h2>
-      <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-        We are offering exciting internship opportunities for passionate students and freshers.
-        Fill out the form below to apply and kickstart your journey with us.
-      </p>
-      
-      <!-- Google Form embedded in an iframe -->
-      <div class="bg-[#1a1a1a] p-4 md:p-8 rounded-2xl shadow-2xl overflow-hidden card-glow-border">
-        <!-- Add your Google Form URL here in the src attribute -->
-        <iframe 
-          src="https://forms.gle/FE7KZg3yicnknPwv7"
-          class="w-full h-screen"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="Indoryque Global Internship Application Form">
-          Loading…
-        </iframe>
+<div class="container">
+    <h2 class="text-center mb-4 text-sky">Internship Opportunity</h2>
+    <p class="text-center mb-4">
+      We are offering exciting internship opportunities for passionate students and freshers.  
+      Fill out the form below to apply and kickstart your journey with us.
+    </p>
+
+    <div class="d-flex justify-content-center">
+      <div class="card shadow-lg p-3 bg-black rounded-4" style="max-width: 900px; width: 100%;">
+        <div class="card-body">
+          <iframe 
+            src="https://forms.gle/GAZCvYinEc4HiifLA" 
+            width="100%" 
+            height="800" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            style="border-radius: 12px; border: 2px solid #00bfff; background:#111;">
+            Loading…
+          </iframe>
+        </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- Footer -->
