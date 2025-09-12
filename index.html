@@ -81,8 +81,8 @@
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <a class="flex items-center space-x-2 text-xl font-extrabold text-white transition-transform duration-300 transform hover:scale-105" href="#">
         <!-- Logo from your root directory -->
-        <img src="logo1.jpg" alt="Indoryque Global Logo" class="h-10 w-auto rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Logo';" />
-      
+        <img src="logo1.jpg" alt="Indoryque Global Logo" class="h-16 w-auto rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Logo';" />
+        <span class="hidden md:block">Indoryque Global</span>
       </a>
       <div class="hidden md:flex items-center space-x-6 text-white font-medium">
         <a href="#home" class="hover:text-[#0d94ff] transition-colors">Home</a>
@@ -196,9 +196,9 @@
           <p class="text-gray-400">Native & hybrid apps delivering seamless user experiences.</p>
         </div>
         <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
-        <i class="bi bi-cloud-check text-5xl text-[#0d94ff] mb-4"></i>
+          <i class="bi bi-cloud-check text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">Cloud Solutions</h5>
-       ⁶   <p class="text-gray-400">Secure and scalable cloud hosting, migration & DevOps services.</p>
+          <p class="text-gray-400">Secure and scalable cloud hosting, migration & DevOps services.</p>
         </div>
         <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-shield-lock text-5xl text-[#0d94ff] mb-4"></i>
@@ -325,17 +325,18 @@
         Fill out the form below to apply and kickstart your journey with us.
       </p>
       
-      <!-- More creative placeholder for the form -->
+      <!-- Google Form embedded in an iframe -->
       <div class="bg-[#1a1a1a] p-4 md:p-8 rounded-2xl shadow-2xl overflow-hidden card-glow-border">
-        <div class="w-full h-96 md:h-[600px] bg-gray-900 rounded-xl flex flex-col items-center justify-center p-8 border-2 border-dashed border-gray-700">
-          <i class="bi bi-file-earmark-person text-6xl text-gray-600 mb-4"></i>
-          <p class="text-xl md:text-2xl text-white opacity-50 font-bold">
-              Application Form Coming Soon...
-          </p>
-          <p class="text-sm text-gray-600 mt-2">
-            The form is currently being optimized for a better user experience. Please check back later!
-          </p>
-        </div>
+        <!-- Add your Google Form URL here in the src attribute -->
+        <iframe 
+          src="https://forms.gle/FE7KZg3yicnknPwv7"
+          class="w-full h-screen"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Indoryque Global Internship Application Form">
+          Loading…
+        </iframe>
       </div>
     </div>
   </section>
