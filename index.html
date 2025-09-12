@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indoryque Global Systems</title>
-  
+
   <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Bootstrap Icons for visuals -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  
+
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="css/styles.css" rel="stylesheet">
 
   <style>
     /* Custom styles and overrides */
@@ -26,20 +29,22 @@
 
     /* Hero section background glow */
     .hero-glow-bg {
-        background: radial-gradient(circle at 50% 50%, rgba(13, 148, 255, 0.6), rgba(13, 148, 255, 0.05), transparent);
+      background: radial-gradient(circle at 50% 50%, rgba(13, 148, 255, 0.6), rgba(13, 148, 255, 0.05), transparent);
     }
-    
+
     /* Glowing card effect */
     .card-glow-border {
       position: relative;
       overflow: hidden;
     }
+
     .card-glow-border::before {
       content: '';
       position: absolute;
       inset: 0;
       border: 2px solid transparent;
-      border-radius: 1.5rem; /* Matches rounded-2xl */
+      border-radius: 1.5rem;
+      /* Matches rounded-2xl */
       background: linear-gradient(45deg, #0d94ff, #83e0ff, #0d94ff) border-box;
       -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
@@ -47,6 +52,7 @@
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
     }
+
     .card-glow-border:hover::before {
       opacity: 1;
     }
@@ -56,9 +62,17 @@
       border-right: 2px solid #0d94ff;
       animation: blink-caret 0.75s step-end infinite;
     }
+
     @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: #0d94ff; }
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: #0d94ff;
+      }
     }
 
     /* Section fade-in animation */
@@ -67,6 +81,7 @@
       transform: translateY(30px);
       transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
+
     .animate-on-scroll.is-visible {
       opacity: 1;
       transform: translateY(0);
@@ -74,15 +89,18 @@
   </style>
 
 </head>
+
 <body class="bg-[#000000] text-[#E5E7EB]">
 
   <!-- Navbar -->
   <nav class="fixed top-0 z-50 w-full bg-[#000000] bg-opacity-100 backdrop-blur-md shadow-lg">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a class="flex items-center space-x-2 text-xl font-extrabold text-white transition-transform duration-300 transform hover:scale-105" href="#">
+      <a class="flex items-center space-x-2 text-xl font-extrabold text-white transition-transform duration-300 transform hover:scale-105"
+        href="#">
         <!-- Logo from your root directory -->
-        <img src="logo1.jpg" alt="Indoryque Global Logo" class="h-16 w-auto rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Logo';" />
-        
+        <img src="logo1.jpg" alt="Indoryque Global Logo" class="h-20 w-auto rounded-lg"
+          onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Logo';" />
+
       </a>
       <div class="hidden md:flex items-center space-x-6 text-white font-medium">
         <a href="#home" class="hover:text-[#0d94ff] transition-colors">Home</a>
@@ -109,19 +127,23 @@
         <a href="#services" class="block py-2 text-center w-full hover:bg-gray-800 transition-colors">Services</a>
         <a href="#industries" class="block py-2 text-center w-full hover:bg-gray-800 transition-colors">Industries</a>
         <a href="#team" class="block py-2 text-center w-full hover:bg-gray-800 transition-colors">Team</a>
+        <a href="#techologies"
+          class="block py-2 text-center w-full hover:bg-gray-800 transition-colors">Technologies</a>
         <a href="#contact" class="block py-2 text-center w-full hover:bg-gray-800 transition-colors">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section with Dynamic Background -->
-  <header id="home" class="min-h-screen flex items-center justify-center text-center bg-[#000000] relative overflow-hidden hero-glow-bg">
+  <header id="home"
+    class="min-h-screen flex items-center justify-center text-center bg-[#000000] relative overflow-hidden hero-glow-bg">
     <div class="absolute inset-0 z-0 opacity-40">
-      <svg class="absolute inset-0 w-full h-full animate-[pulse_20s_infinite]" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <svg class="absolute inset-0 w-full h-full animate-[pulse_20s_infinite]" viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid slice">
         <defs>
           <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#0d94ff" stop-opacity="0.2"/>
-            <stop offset="100%" stop-color="#0d94ff" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#0d94ff" stop-opacity="0.2" />
+            <stop offset="100%" stop-color="#0d94ff" stop-opacity="0" />
           </radialGradient>
         </defs>
         <circle cx="20" cy="80" r="10" fill="url(#grad1)" />
@@ -131,86 +153,110 @@
       </svg>
     </div>
     <div class="absolute inset-0 bg-[#000000] bg-opacity-80 backdrop-blur-sm"></div>
-    <div class="relative z-10 p-8 md:p-12 lg:p-16 rounded-3xl backdrop-blur-sm bg-black bg-opacity-50 mx-auto max-w-4xl border border-gray-700 shadow-2xl">
+    <div
+      class="relative z-10 p-8 md:p-12 lg:p-16 rounded-3xl backdrop-blur-sm bg-black bg-opacity-50 mx-auto max-w-4xl shadow-2xl">
       <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-4 animate-pulse">
         Indoryque Global Systems
       </h1>
-      <p id="typed-text" class="text-xl md:text-2xl lg:text-3xl font-light text-[#0d94ff] mb-6 tracking-wide typing-effect"></p>
+      <p id="typed-text"
+        class="text-xl md:text-2xl lg:text-3xl font-light text-[#0d94ff] mb-6 tracking-wide typing-effect"></p>
       <p class="text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
         We craft intelligent, scalable, and impactful technology solutions that redefine possibilities.
       </p>
       <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-        <a href="#services" class="px-8 py-3 rounded-full text-lg font-bold border border-white text-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">Explore Services</a>
-        <a href="#contact" class="px-8 py-3 rounded-full text-lg font-bold border border-[#0d94ff] text-white bg-[#0d94ff] hover:bg-transparent hover:text-[#0d94ff] transition-all duration-300 transform hover:scale-105">Work With Us</a>
+        <a href="#services"
+          class="px-8 py-3 rounded-full text-lg font-bold border border-white text-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">Explore
+          Services</a>
+        <a href="#contact"
+          class="px-8 py-3 rounded-full text-lg font-bold border border-[#0d94ff] text-white bg-[#0d94ff] hover:bg-transparent hover:text-[#0d94ff] transition-all duration-300 transform hover:scale-105">Work
+          With Us</a>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-20 md:py-32 text-center animate-on-scroll">
+  <section id="about" class="py-5 md:py-6 text-center animate-on-scroll">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold text-[#0d94ff] mb-4">About Us</h2>
       <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-        At **Indoryque Global Systems**, we believe technology is not just about writing code — it’s about creating transformation.
+        At <span class="text-sky">Indoryque Global Systems</span>, we believe technology is not just about writing code
+        — it’s about creating transformation.
+        Since our inception, we have been on a mission to help businesses of all sizes harness the power of digital
+        innovation, scalability, and security.
+
       </p>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="group p-8 bg-[#1a1a1a] rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#262626] card-glow-border">
+        <div
+          class="group p-8 bg-[#1a1a1a] rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#262626] card-glow-border">
           <i class="bi bi-eye text-5xl text-[#0d94ff] mb-4 transition-transform duration-300 group-hover:scale-110"></i>
           <h5 class="text-xl font-bold text-white mb-2">Our Vision</h5>
           <p class="text-gray-400">
-            To be recognized as a **global leader** in digital solutions, inspiring progress through innovation, creativity, and sustainability.
+            To be recognized as a <strong>global leader</strong> in digital solutions,
+            inspiring progress through innovation, creativity, and sustainability.
           </p>
         </div>
-        <div class="group p-8 bg-[#1a1a1a] rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#262626] card-glow-border">
-          <i class="bi bi-bullseye text-5xl text-[#0d94ff] mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+        <div
+          class="group p-8 bg-[#1a1a1a] rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#262626] card-glow-border">
+          <i
+            class="bi bi-bullseye text-5xl text-[#0d94ff] mb-4 transition-transform duration-300 group-hover:scale-110"></i>
           <h5 class="text-xl font-bold text-white mb-2">Our Mission</h5>
           <p class="text-gray-400">
-            Empowering businesses with **secure, scalable, and future-ready technology**, ensuring agility and long-term success in a rapidly evolving world.
+            Empowering businesses with <strong>secure, scalable, and future-ready technology</strong>,
+            ensuring agility and long-term success in a rapidly evolving world.
           </p>
         </div>
-        <div class="group p-8 bg-[#1a1a1a] rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#262626] card-glow-border">
-          <i class="bi bi-lightning-charge text-5xl text-[#0d94ff] mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+        <div
+          class="group p-8 bg-[#1a1a1a] rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#262626] card-glow-border">
+          <i
+            class="bi bi-lightning-charge text-5xl text-[#0d94ff] mb-4 transition-transform duration-300 group-hover:scale-110"></i>
           <h5 class="text-xl font-bold text-white mb-2">Our Values</h5>
           <p class="text-gray-400">
-            We stand by **Innovation, Integrity, and Impact** — the three pillars that drive every solution we build and every relationship we nurture.
+            We stand by <strong>Innovation</strong>, <strong>Integrity</strong>, and <strong>Impact</strong> —
+            the three pillars that drive every solution we build and every relationship we nurture.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- Services Section -->
-  <section id="services" class="py-20 md:py-32 animate-on-scroll">
+  <section id="services" class="py-5 md:py-6 animate-on-scroll">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-12">Our Services</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
+        <div
+          class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-code-slash text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">Web Development</h5>
           <p class="text-gray-400">Custom websites & portals with modern frameworks and responsive design.</p>
         </div>
-        <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
+        <div
+          class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-phone text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">Mobile Apps</h5>
           <p class="text-gray-400">Native & hybrid apps delivering seamless user experiences.</p>
         </div>
-        <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
+        <div
+          class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-cloud-check text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">Cloud Solutions</h5>
           <p class="text-gray-400">Secure and scalable cloud hosting, migration & DevOps services.</p>
         </div>
-        <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
+        <div
+          class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-shield-lock text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">Cybersecurity</h5>
           <p class="text-gray-400">Protecting your business with cutting-edge security practices.</p>
         </div>
-        <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
+        <div
+          class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-robot text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">AI & Automation</h5>
           <p class="text-gray-400">Boost efficiency with AI-powered business automation and analytics.</p>
         </div>
-        <div class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
+        <div
+          class="group p-8 rounded-2xl bg-[#1a1a1a] shadow-xl transition-all duration-300 hover:bg-[#262626] hover:shadow-2xl card-glow-border">
           <i class="bi bi-cart-check text-5xl text-[#0d94ff] mb-4"></i>
           <h5 class="text-xl font-bold text-white mb-2">E-Commerce</h5>
           <p class="text-gray-400">Complete e-commerce solutions from storefront to payment integration.</p>
@@ -220,7 +266,7 @@
   </section>
 
   <!-- Industries Section -->
-  <section id="industries" class="py-20 md:py-32 animate-on-scroll">
+  <section id="industries" class="py-5 md:py-6 animate-on-scroll">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-extrabold text-[#0d94ff] mb-12">Industries We Serve</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -245,13 +291,17 @@
   </section>
 
   <!-- Team Section with Images -->
-  <section id="team" class="py-20 md:py-32 animate-on-scroll">
+  <section id="team" class="py-5 md:py-6 animate-on-scroll">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-12">Meet Our Team</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Harsh Gupta - Founder -->
-        <div class="bg-[#1a1a1a] rounded-2xl shadow-xl p-8 flex flex-col items-center text-center group transition-all duration-300 hover:bg-[#262626] card-glow-border">
-          <img src="founder.png" class="rounded-full w-36 h-36 object-cover mb-6 transition-transform duration-300 transform group-hover:scale-105" alt="Harsh Gupta, Founder" onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Founder';" />
+        <div
+          class="bg-[#1a1a1a] rounded-2xl shadow-xl p-8 flex flex-col items-center text-center group transition-all duration-300 hover:bg-[#262626] card-glow-border">
+          <img src="founder.png"
+            class="rounded-full w-36 h-36 object-cover mb-6 transition-transform duration-300 transform group-hover:scale-105"
+            alt="Harsh Gupta, Founder"
+            onerror="this.onerror=null;this.src='https://placehold.co/150x150/0d94ff/ffffff?text=Founder';" />
           <h5 class="text-2xl font-bold text-[#0d94ff] mb-1">Harsh Gupta</h5>
           <p class="text-lg italic text-gray-400 mb-4">Founder & Visionary Leader</p>
           <p class="text-gray-300">
@@ -260,8 +310,12 @@
           </p>
         </div>
         <!-- Senior Developer -->
-        <div class="bg-[#1a1a1a] rounded-2xl shadow-xl p-8 flex flex-col items-center text-center group transition-all duration-300 hover:bg-[#262626] card-glow-border">
-          <img src="team1.jpg" class="rounded-full w-36 h-36 object-cover mb-6 transition-transform duration-300 transform group-hover:scale-105" alt="Senior Developer" onerror="this.onerror=null;this.src='https://placehold.co/150x150/505050/ffffff?text=Developer';" />
+        <div
+          class="bg-[#1a1a1a] rounded-2xl shadow-xl p-8 flex flex-col items-center text-center group transition-all duration-300 hover:bg-[#262626] card-glow-border">
+          <img src="team1.jpg"
+            class="rounded-full w-36 h-36 object-cover mb-6 transition-transform duration-300 transform group-hover:scale-105"
+            alt="Senior Developer"
+            onerror="this.onerror=null;this.src='https://placehold.co/150x150/505050/ffffff?text=Developer';" />
           <h5 class="text-2xl font-bold text-white mb-1">Senior Developer</h5>
           <p class="text-lg italic text-gray-400 mb-4">Tech Lead</p>
           <p class="text-gray-300">
@@ -270,8 +324,12 @@
           </p>
         </div>
         <!-- Project Manager -->
-        <div class="bg-[#1a1a1a] rounded-2xl shadow-xl p-8 flex flex-col items-center text-center group transition-all duration-300 hover:bg-[#262626] card-glow-border">
-          <img src="team1.jpg" class="rounded-full w-36 h-36 object-cover mb-6 transition-transform duration-300 transform group-hover:scale-105" alt="Project Manager" onerror="this.onerror=null;this.src='https://placehold.co/150x150/505050/ffffff?text=Manager';" />
+        <div
+          class="bg-[#1a1a1a] rounded-2xl shadow-xl p-8 flex flex-col items-center text-center group transition-all duration-300 hover:bg-[#262626] card-glow-border">
+          <img src="team1.jpg"
+            class="rounded-full w-36 h-36 object-cover mb-6 transition-transform duration-300 transform group-hover:scale-105"
+            alt="Project Manager"
+            onerror="this.onerror=null;this.src='https://placehold.co/150x150/505050/ffffff?text=Manager';" />
           <h5 class="text-2xl font-bold text-white mb-1">Project Manager</h5>
           <p class="text-lg italic text-gray-400 mb-4">Operations & Delivery</p>
           <p class="text-gray-300">
@@ -287,28 +345,117 @@
   <section class="py-20 bg-gradient-to-r from-[#000000] to-[#1a1a1a] text-center animate-on-scroll">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Let’s Build Something Great Together</h2>
-      <a href="#contact" class="px-8 py-4 rounded-full text-xl font-bold bg-[#0d94ff] text-white hover:bg-white hover:text-[#0d94ff] transition-colors duration-300 shadow-lg">Contact Us Today</a>
+      <a href="#contact"
+        class="px-8 py-4 rounded-full text-xl font-bold bg-[#0d94ff] text-white hover:bg-white hover:text-[#0d94ff] transition-colors duration-300 shadow-lg">Contact
+        Us Today</a>
     </div>
   </section>
 
+
+
+  <!-- Technology -->
+  <section id="technology" class="py-5 bg-dark">
+    <div class="container text-center">
+      <h2 class="fw-bold text-sky mb-4">Our Technology Expertise</h2>
+      <p class="lead mb-5">
+        We combine <span class="text-sky">cutting-edge tools</span> with proven practices
+        to deliver scalable, secure, and future-ready solutions across industries.
+      </p>
+
+      <div class="row g-4">
+
+        <!-- Frontend -->
+        <div class="col-md-4">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-code-slash display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Frontend Development</h5>
+            <p>
+              Building modern, responsive, and user-friendly interfaces using
+              <strong>HTML5, CSS3, JavaScript, React, Angular, and Bootstrap</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="col-md-4">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-hdd-network display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Backend & APIs</h5>
+            <p>
+              Scalable server-side solutions with
+              <strong>Node.js, Python, Django, Java, Spring Boot, and REST/GraphQL APIs</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="col-md-4">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-phone display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Mobile Development</h5>
+            <p>
+              Cross-platform mobile apps using
+              <strong>React Native, Flutter, and Kotlin</strong> with smooth performance
+              and native-like experiences.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="col-md-6">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-cloud-check display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Cloud & DevOps</h5>
+            <p>
+              Expertise in <strong>AWS, Azure, Google Cloud, Docker, Kubernetes, and CI/CD pipelines</strong>
+              ensuring seamless deployment, monitoring, and scalability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Emerging Tech -->
+        <div class="col-md-6">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-cpu display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Emerging Technologies</h5>
+            <p>
+              Driving innovation with <strong>AI/ML, IoT, Blockchain, AR/VR, and RPA</strong>
+              to future-proof businesses and deliver smart, adaptive solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- Contact Section -->
-  <section id="contact" class="py-20 md:py-32 animate-on-scroll">
+  <section id="contact" class="py-5 md:py-6 animate-on-scroll">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#0d94ff] mb-12">Get in Touch</h2>
       <div class="flex justify-center">
         <!-- The form structure is ready for submission -->
         <form id="contact-form" class="w-full max-w-2xl bg-[#1a1a1a] p-8 rounded-2xl shadow-2xl">
           <div class="mb-6">
-            <input type="text" id="name" name="name" class="w-full px-6 py-4 bg-[#262626] text-white rounded-xl placeholder-gray-500 border-none focus:ring-2 focus:ring-[#0d94ff] focus:outline-none transition-shadow" placeholder="Your Name" required>
+            <input type="text" id="name" name="name"
+              class="w-full px-6 py-4 bg-[#262626] text-white rounded-xl placeholder-gray-500 border-none focus:ring-2 focus:ring-[#0d94ff] focus:outline-none transition-shadow"
+              placeholder="Your Name" required>
           </div>
           <div class="mb-6">
-            <input type="email" id="email" name="email" class="w-full px-6 py-4 bg-[#262626] text-white rounded-xl placeholder-gray-500 border-none focus:ring-2 focus:ring-[#0d94ff] focus:outline-none transition-shadow" placeholder="Your Email" required>
+            <input type="email" id="email" name="email"
+              class="w-full px-6 py-4 bg-[#262626] text-white rounded-xl placeholder-gray-500 border-none focus:ring-2 focus:ring-[#0d94ff] focus:outline-none transition-shadow"
+              placeholder="Your Email" required>
           </div>
           <div class="mb-6">
-            <textarea id="message" name="message" class="w-full px-6 py-4 bg-[#262626] text-white rounded-xl placeholder-gray-500 border-none focus:ring-2 focus:ring-[#0d94ff] focus:outline-none transition-shadow" rows="6" placeholder="Your Message" required></textarea>
+            <textarea id="message" name="message"
+              class="w-full px-6 py-4 bg-[#262626] text-white rounded-xl placeholder-gray-500 border-none focus:ring-2 focus:ring-[#0d94ff] focus:outline-none transition-shadow"
+              rows="6" placeholder="Your Message" required></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="px-10 py-4 rounded-full text-lg font-bold bg-[#0d94ff] text-white hover:bg-white hover:text-[#0d94ff] transition-colors duration-300 transform hover:scale-105 shadow-md">Send Message</button>
+            <button type="submit"
+              class="px-10 py-4 rounded-full text-lg font-bold bg-[#0d94ff] text-white hover:bg-white hover:text-[#0d94ff] transition-colors duration-300 transform hover:scale-105 shadow-md">Send
+              Message</button>
           </div>
           <div id="form-message" class="mt-4 text-center font-medium"></div>
         </form>
@@ -317,34 +464,30 @@
   </section>
 
   <!-- Internship Section -->
-  <section id="internship" class="py-20 md:py-32">
+  <section id="internship" class="py-5 md:py-6">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-extrabold text-[#0d94ff] mb-6">Internship Opportunity</h2>
       <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12">
         We are offering exciting internship opportunities for passionate students and freshers.
         Fill out the form below to apply and kickstart your journey with us.
       </p>
-      
-      <!-- Google Form embedded in an iframe 
-      <div class="bg-[#1a1a1a] p-4 md:p-8 rounded-2xl shadow-2xl card-glow-border">
-        <!-- Add your Google Form URL here in the src attribute -->
-        <iframe 
-            src="https://forms.gle/GAZCvYinEc4HiifLA" 
-            width="100%" 
-            height="800" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0"
-            style="border-radius: 12px; border: 2px solid #00bfff; background:#111;">
-            Loading…
-        </iframe>
+      <div class="d-flex justify-content-center">
+        <div class="card shadow-lg p-3 bg-black rounded-4" style="max-width: 900px; width: 100%;">
+          <div class="card-body">
+            <iframe src="https://forms.gle/GAZCvYinEc4HiifLA" width="100%" height="800" frameborder="0" marginheight="0"
+              marginwidth="0" style="border-radius: 12px; border: 2px solid #00bfff; background:#111;">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-[#000000] py-10 text-center animate-on-scroll">
     <div class="container mx-auto px-4">
-      <p class="text-gray-500">&copy; 2025 Indoryque Global Systems. All Rights Reserved.</p>
+      <p class="mt-4">&copy; 2025 Indoryque Global Systems.<br /> All Rights Reserved.</p>
     </div>
   </footer>
 
@@ -376,7 +519,7 @@
       }
       setTimeout(type, isDeleting ? 50 : 100);
     }
-    
+
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -406,7 +549,7 @@
 
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       formMessage.textContent = 'Sending...';
       formMessage.classList.remove('text-green-500', 'text-red-500');
       formMessage.classList.add('text-yellow-500');
@@ -438,7 +581,7 @@
       //   formMessage.classList.remove('text-yellow-500', 'text-green-500');
       //   formMessage.classList.add('text-red-500');
       // });
-      
+
       // Simulating a successful submission for demonstration
       setTimeout(() => {
         formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
@@ -448,10 +591,11 @@
       }, 2000);
     });
 
-    window.onload = function() {
+    window.onload = function () {
       type();
     }
   </script>
 
 </body>
+
 </html>
