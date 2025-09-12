@@ -80,13 +80,15 @@ a:hover {
   margin: 0 auto 20px;
   color: #cccccc;
 }
-#about .icon-box {
-  margin-top: 20px;
-}
-#about .icon-box i {
+
+#about i {
   font-size: 2rem;
   color: #00bfff;
   margin-bottom: 10px;
+}
+
+#about h5 {
+  color: #00bfff;
 }
 
 /* ===============================
