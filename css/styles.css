@@ -6,8 +6,6 @@ body {
   background: #0d0d0d;
   color: #e0e0e0;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,66 +23,46 @@ a {
   transition: 0.3s;
 }
 a:hover {
-  color: #00bfff;
+  color: #66d9ff;
 }
 
-/* ===============================
-   NAVBAR
-================================ */
-.navbar {
-  background: #000;
-  padding: 12px 20px;
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-brand img {
-  height: 40px;
-  margin-right: 10px;
+.logo-text {
+  line-height: 1.1;
 }
 
 .company-name {
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 1.2;
 }
+
 .company-name .indo {
-  color: #ffffff;
+  color: #ffffff; /* White for Indo */
 }
+
 .company-name .ryque {
-  color: #00bfff;
+  color: #00bfff; /* Sky blue for Ryque */
 }
+
 .tagline {
   font-size: 0.8rem;
-  color: #bbbbbb;
+  color: #bbbbbb; /* Soft gray */
   letter-spacing: 1px;
   font-weight: 400;
 }
 
-/* Menu icon */
-.navbar-toggler {
-  border: none;
-  background: none;
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+  background: #000 !important;
+  padding: 12px 20px;
 }
-.navbar-toggler-icon {
-  width: 25px;
-  height: 2px;
-  background: #00bfff;
-  display: block;
-  margin: 5px 0;
-  transition: 0.3s;
-}
-.navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.navbar-toggler.open .navbar-toggler-icon:nth-child(2) {
-  opacity: 0;
-}
-.navbar-toggler.open .navbar-toggler-icon:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00bfff !important;
 }
 
 .navbar-nav .nav-link {
@@ -127,11 +105,13 @@ a:hover {
   margin: 0 auto 20px;
   color: #cccccc;
 }
+
 #about i {
   font-size: 2rem;
   color: #00bfff;
   margin-bottom: 10px;
 }
+
 #about h5 {
   color: #00bfff;
 }
@@ -147,6 +127,7 @@ a:hover {
   text-align: center;
   margin-bottom: 40px;
 }
+
 #services .card {
   background: #1c1c1c;
   border: 1px solid #2a2a2a;
@@ -157,16 +138,23 @@ a:hover {
   transition: all 0.3s ease;
   height: 100%;
 }
+
 #services .card i {
   font-size: 2.5rem;
   margin-bottom: 12px;
   color: #00bfff;
 }
+
 #services .card h5 {
   color: #00bfff;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+#services .card p {
+  color: #cccccc;
+}
+
 #services .card:hover {
   background: #262626;
   transform: translateY(-5px);
@@ -186,6 +174,9 @@ a:hover {
   color: #00bfff;
   margin-bottom: 10px;
 }
+#industries p {
+  color: #cccccc;
+}
 
 /* ===============================
    SUCCESS STORIES
@@ -197,6 +188,7 @@ a:hover {
 #success .card {
   background: #1a1a1a;
   border: 1px solid #2a2a2a;
+  color: #e0e0e0;
   padding: 25px;
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -254,27 +246,23 @@ a:hover {
   background: #0099cc;
 }
 
-/* ===============================
-   INTERNSHIP
-================================ */
-#internship {
-  background: #111;
-  padding: 80px 20px;
-}
+
 #internship h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: center;
 }
+
 #internship iframe {
   box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
   transition: transform 0.3s ease;
-  border-radius: 10px;
 }
+
 #internship iframe:hover {
   transform: scale(1.01);
 }
+
+
 
 /* ===============================
    FOOTER
