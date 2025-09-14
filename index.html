@@ -14,24 +14,24 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm custom-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- Logo Icon -->
-        <img src="logo-icon.png" alt="IndoRyque Logo" height="70" class="me-2">
-
-        <!-- Text -->
-        <div class="logo-text">
-          <span class="company-name">
-            <span class="indo">Indo</span><span class="ryque">Ryque</span>
-          </span>
-          <br>
-          <small class="tagline">Technologies</small>
-        </div>
-      </a>
+      <!-- Logo Icon -->
+      <img src="logo-icon.png" alt="IndoRyque Logo" height="80" class="me-2">
+      
+      <!-- Text -->
+      <div class="logo-text">
+        <span class="company-name">
+          <span class="indo">Indo</span><span class="ryque">Ryque</span>
+        </span>
+        <br>
+        <small class="tagline">Technologies</small>
+      </div>
+    </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
@@ -51,53 +51,63 @@
   </nav>
 
   <!-- Hero -->
-  <section id="home" class="hero d-flex align-items-center text-center">
+  <section id="home" class="d-flex align-items-center text-center"
+    style="min-height:100vh; background:linear-gradient(135deg, #000 50%, #001f33 100%);">
     <div class="container">
       <h1 class="display-3 fw-bold mb-3">IndoRyque Technologies</h1>
-      <p class="lead text-sky" id="typed-text">Transforming Ideas into Reality</p>
-      <p class="mb-4">We craft intelligent, scalable, and impactful technology solutions that redefine possibilities.</p>
+      <p class="lead text-sky" id="typed-text">Transforming Ideas into Reali</p>
+      <p class="mb-4">We craft intelligent, scalable, and impactful technology solutions that redefine possibilities.
+      </p>
       <a href="#services" class="btn btn-outline-light btn-lg me-3">Explore Services</a>
-      <a href="#contact" class="btn btn-sky btn-lg">Work With Us</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Work With Us</a>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-5 section-bg">
+  <section id="about" class="py-5 bg-black">
     <div class="container text-center">
       <h2 class="fw-bold text-sky mb-4">About Us</h2>
       <p class="lead mb-4">
-        At <span class="text-sky">IndoRyque Technologies</span>, we believe technology is not just about writing code —
-        it’s about creating transformation.
+        At <span class="text-sky">IndoRyque Technologies</span>, we believe technology is not just about writing code
+        — it’s about creating transformation.
+        Since our inception, we have been on a mission to help businesses of all sizes harness the power of digital
+        innovation, scalability, and security.
       </p>
 
       <div class="row mt-5 g-4">
         <!-- Vision -->
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="p-4 bg-dark rounded shadow h-100">
             <i class="bi bi-eye display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Our Vision</h5>
-            <p>To be recognized as a <strong>global leader</strong> in digital solutions, inspiring progress through
-              innovation, creativity, and sustainability.</p>
+            <p>
+              To be recognized as a <strong>global leader</strong> in digital solutions,
+              inspiring progress through innovation, creativity, and sustainability.
+            </p>
           </div>
         </div>
 
         <!-- Mission -->
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="p-4 bg-dark rounded shadow h-100">
             <i class="bi bi-bullseye display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Our Mission</h5>
-            <p>Empowering businesses with <strong>secure, scalable, and future-ready technology</strong>, ensuring
-              agility and long-term success.</p>
+            <p>
+              Empowering businesses with <strong>secure, scalable, and future-ready technology</strong>,
+              ensuring agility and long-term success in a rapidly evolving world.
+            </p>
           </div>
         </div>
 
-        <!-- Values -->
+        <!-- Core Values -->
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="p-4 bg-dark rounded shadow h-100">
             <i class="bi bi-lightning-charge display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Our Values</h5>
-            <p><strong>Innovation</strong>, <strong>Integrity</strong>, and <strong>Impact</strong> — the three pillars
-              that drive every solution and relationship.</p>
+            <p>
+              We stand by <strong>Innovation</strong>, <strong>Integrity</strong>, and <strong>Impact</strong> —
+              the three pillars that drive every solution we build and every relationship we nurture.
+            </p>
           </div>
         </div>
       </div>
@@ -110,24 +120,45 @@
       <h2 class="fw-bold text-center text-sky mb-5">Our Services</h2>
       <div class="row g-4 text-center">
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100">
             <i class="bi bi-code-slash display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Web Development</h5>
-            <p>Custom websites & portals with modern frameworks and responsive design.</p>
+            <p>Custom websites &amp; portals with modern frameworks and responsive design.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100">
             <i class="bi bi-phone display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Mobile Apps</h5>
-            <p>Native & hybrid apps delivering seamless user experiences.</p>
+            <p>Native &amp; hybrid apps delivering seamless user experiences.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100">
             <i class="bi bi-cloud-check display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Cloud Solutions</h5>
-            <p>Secure and scalable cloud hosting, migration & DevOps services.</p>
+            <p>Secure and scalable cloud hosting, migration &amp; DevOps services.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-black border-0 shadow p-4 h-100">
+            <i class="bi bi-shield-lock display-4 text-sky mb-3"></i>
+            <h5 class="fw-bold">Cybersecurity</h5>
+            <p>Protecting your business with cutting-edge security practices.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-black border-0 shadow p-4 h-100">
+            <i class="bi bi-robot display-4 text-sky mb-3"></i>
+            <h5 class="fw-bold">AI &amp; Automation</h5>
+            <p>Boost efficiency with AI-powered business automation and analytics.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-black border-0 shadow p-4 h-100">
+            <i class="bi bi-cart-check display-4 text-sky mb-3"></i>
+            <h5 class="fw-bold">E-Commerce</h5>
+            <p>Complete e-commerce solutions from storefront to payment integration.</p>
           </div>
         </div>
       </div>
@@ -135,83 +166,187 @@
   </section>
 
   <!-- Industries -->
-  <section id="industries" class="py-5 section-bg">
+  <section id="industries" class="py-5 bg-black">
     <div class="container">
       <h2 class="fw-bold text-center text-sky mb-5">Industries We Serve</h2>
       <div class="row g-4 text-center">
-        <div class="col-md-3"><h5><i class="bi bi-heart-pulse text-sky"></i> Healthcare</h5></div>
-        <div class="col-md-3"><h5><i class="bi bi-cash-stack text-sky"></i> FinTech</h5></div>
-        <div class="col-md-3"><h5><i class="bi bi-book text-sky"></i> Education</h5></div>
-        <div class="col-md-3"><h5><i class="bi bi-truck text-sky"></i> Logistics</h5></div>
+        <div class="col-md-3">
+          <h5><i class="bi bi-heart-pulse text-sky"></i> Healthcare</h5>
+        </div>
+        <div class="col-md-3">
+          <h5><i class="bi bi-cash-stack text-sky"></i> FinTech</h5>
+        </div>
+        <div class="col-md-3">
+          <h5><i class="bi bi-book text-sky"></i> Education</h5>
+        </div>
+        <div class="col-md-3">
+          <h5><i class="bi bi-truck text-sky"></i> Logistics</h5>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Case Studies 
+  <section id="case-studies" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center text-sky mb-5">Success Stories</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-dark rounded shadow h-100">
+            <h5 class="text-sky">E-Commerce Growth</h5>
+            <p>Helped an online retailer increase sales by 120% with a new mobile-first platform.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-dark rounded shadow h-100">
+            <h5 class="text-sky">FinTech Automation</h5>
+            <p>Automated financial workflows for a startup, reducing processing time by 60%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
 
   <!-- Team -->
   <section id="team" class="py-5">
     <div class="container">
-      <h2 class="text-center text-sky mb-5">Meet Our Team</h2>
+      <h2 class="text-center mb-5">Meet Our Team</h2>
       <div class="row g-4">
-        <!-- Founder -->
+
+        <!-- Harsh Gupta - Founder -->
         <div class="col-md-4">
-          <div class="info-card h-100 text-center">
+          <div class="card bg-black border-0 shadow h-100 text-center shadow-lg">
             <img src="founder.png" class="card-img-top rounded-circle p-3" alt="Harsh Gupta">
-            <h5 class="fw-bold text-sky">Harsh Gupta</h5>
-            <p class="text-muted fst-italic">Founder & Visionary Leader</p>
-            <p>Driving digital transformation and innovation with 8+ years of experience. Passionate about building
-              technology that empowers businesses globally.</p>
+            <div class="card-body">
+              <h5 class="card-title text-sky fw-bold">Harsh Gupta</h5>
+              <p class="card-subtitle mb-3 text-light fst-italic">Founder &amp; Visionary Leader</p>
+              <p class="card-text text-light">
+                Driving digital transformation and innovation with 8+ years of experience.
+                Passionate about building technology that empowers businesses globally.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Others -->
+
+        <!-- Sample Member 1 -->
         <div class="col-md-4">
-          <div class="info-card h-100 text-center">
+          <div class="card bg-black border-0 shadow h-100 text-center shadow-lg">
             <img src="team1.jpg" class="card-img-top rounded-circle p-3" alt="Senior Developer">
-            <h5 class="fw-bold text-sky">Senior Developer</h5>
-            <p class="text-muted fst-italic">Tech Lead</p>
-            <p>Expert in full-stack development with 6+ years of experience delivering enterprise solutions.</p>
+            <div class="card-body">
+              <h5 class="card-title text-sky fw-bold">Senior Developer</h5>
+              <p class="card-subtitle mb-2 text-light fst-italic">Tech Lead</p>
+              <p class="card-text text-light">
+                Expert in full-stack development with over 6 years of experience
+                delivering enterprise solutions and scalable platforms.
+              </p>
+            </div>
           </div>
         </div>
+
+        <!-- Sample Member 2 -->
         <div class="col-md-4">
-          <div class="info-card h-100 text-center">
-            <img src="team2.jpg" class="card-img-top rounded-circle p-3" alt="Project Manager">
-            <h5 class="fw-bold text-sky">Project Manager</h5>
-            <p class="text-muted fst-italic">Operations & Delivery</p>
-            <p>Skilled in agile methodologies and client engagement, managing software delivery lifecycles.</p>
+          <div class="card bg-black border-0 shadow h-100 text-center shadow-lg">
+            <img src="team1.jpg" class="card-img-top rounded-circle p-3" alt="Project Manager">
+            <div class="card-body">
+              <h5 class="card-title text-sky fw-bold">Project Manager</h5>
+              <p class="card-subtitle mb-2 text-light fst-italic">Operations &amp; Delivery</p>
+              <p class="card-text text-light">
+                Skilled in agile methodologies and client engagement, with 7 years
+                of experience managing software delivery lifecycles.
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Technologies -->
-  <section id="technologies" class="py-5 section-bg">
+
+  <!-- Technology -->
+  <section id="technologies" class="py-5 bg-dark">
     <div class="container text-center">
       <h2 class="fw-bold text-sky mb-4">Our Technology Expertise</h2>
-      <p class="lead mb-5">We combine <span class="text-sky">cutting-edge tools</span> with proven practices to deliver
-        scalable, secure, and future-ready solutions.</p>
+      <p class="lead mb-5">
+        We combine <span class="text-sky">cutting-edge tools</span> with proven practices
+        to deliver scalable, secure, and future-ready solutions across industries.
+      </p>
+
       <div class="row g-4">
+
+        <!-- Frontend -->
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="p-4 bg-black rounded shadow h-100">
             <i class="bi bi-code-slash display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Frontend Development</h5>
-            <p>HTML5, CSS3, JavaScript, React, Angular, Bootstrap</p>
+            <p>
+              Building modern, responsive, and user-friendly interfaces using
+              <strong>HTML5, CSS3, JavaScript, React, Angular, and Bootstrap</strong>.
+            </p>
           </div>
         </div>
+
+        <!-- Backend -->
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="p-4 bg-black rounded shadow h-100">
             <i class="bi bi-hdd-network display-5 text-sky mb-3"></i>
-            <h5 class="fw-bold text-sky">Backend & APIs</h5>
-            <p>Node.js, Python, Django, Java, Spring Boot, REST/GraphQL</p>
+            <h5 class="fw-bold text-sky">Backend &amp; APIs</h5>
+            <p>
+              Scalable server-side solutions with
+              <strong>Node.js, Python, Django, Java, Spring Boot, and REST/GraphQL APIs</strong>.
+            </p>
           </div>
         </div>
+
+        <!-- Mobile -->
         <div class="col-md-4">
-          <div class="info-card h-100">
+          <div class="p-4 bg-black rounded shadow h-100">
             <i class="bi bi-phone display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Mobile Development</h5>
-            <p>React Native, Flutter, Kotlin — high performance apps</p>
+            <p>
+              Cross-platform mobile apps using
+              <strong>React Native, Flutter, and Kotlin</strong> with smooth performance
+              and native-like experiences.
+            </p>
           </div>
         </div>
+
+        <!-- Cloud -->
+        <div class="col-md-6">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-cloud-check display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Cloud &amp; DevOps</h5>
+            <p>
+              Expertise in <strong>AWS, Azure, Google Cloud, Docker, Kubernetes, and CI/CD pipelines</strong>
+              ensuring seamless deployment, monitoring, and scalability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Emerging Tech -->
+        <div class="col-md-6">
+          <div class="p-4 bg-black rounded shadow h-100">
+            <i class="bi bi-cpu display-5 text-sky mb-3"></i>
+            <h5 class="fw-bold text-sky">Emerging Technologies</h5>
+            <p>
+              Driving innovation with <strong>AI/ML, IoT, Blockchain, AR/VR, and RPA</strong>
+              to future-proof businesses and deliver smart, adaptive solutions.
+            </p>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
+
+
+
+  <!-- CTA Banner -->
+  <section class="py-5 text-center" style="background:linear-gradient(135deg,#001f33,#000);">
+    <div class="container">
+      <h2 class="fw-bold">Let’s Build Something Great Together</h2>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us Today</a>
     </div>
   </section>
 
@@ -222,19 +357,65 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <form>
-            <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name" required></div>
-            <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email" required></div>
-            <div class="mb-3"><textarea class="form-control" rows="4" placeholder="Your Message" required></textarea></div>
-            <div class="text-center"><button type="submit" class="btn btn-sky btn-lg">Send Message</button></div>
+            <div class="mb-3">
+              <input type="text" class="form-control bg-dark text-light border-0" placeholder="Your Name" required="">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control bg-dark text-light border-0" placeholder="Your Email" required="">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control bg-dark text-light border-0" rows="4" placeholder="Your Message"
+                required=""></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-sky btn-lg">Send Message</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Internship Opportunity Section -->
+  <section id="internship" class="py-5 bg-dark text-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-sky">Internship Opportunity</h2>
+      <p class="text-center mb-4">
+        We are offering exciting internship opportunities for passionate students and freshers.
+        Fill out the form below to apply and kickstart your journey with us.
+      </p>
+
+      <div class="d-flex justify-content-center">
+        <div class="card shadow-lg p-3 bg-black rounded-4" style="max-width: 900px; width: 100%;">
+          <div class="card-body">
+            <iframe src="https://forms.gle/GAZCvYinEc4HiifLA" width="100%" height="800" frameborder="0" marginheight="0"
+              marginwidth="0" style="border-radius: 12px; border: 2px solid #00bfff; background:#111;">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Footer -->
-  <footer class="text-center py-4 custom-footer">
-    <p>&copy; 2025 IndoRyque Technologies. All Rights Reserved.</p>
+  <footer class="bg-black text-center py-5">
+    <div class="container">
+      <!-- 
+      <div class="row">
+      
+      <div class="col-md-12 mb-3">
+          <h5 class="text-sky">Indoryque</h5>
+          <p>Where innovation never ends.</p>
+        </div>
+      
+      
+        </div>
+      -->
+    </div>
+    <p class="mt-4">&copy; 2025 IndoRyque Technologies.<br> All Rights Reserved.</p>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
@@ -242,17 +423,36 @@
   <!-- Typing Effect -->
   <script>
     const text = ["Where Innovation Never Ends", "Transforming Ideas into Reality", "Your Digital Growth Partner"];
-    let i = 0, j = 0, isDeleting = false;
+    let i = 0;
+    let j = 0;
+    let current = "";
+    let isDeleting = false;
+
     function type() {
-      const current = text[i];
-      document.getElementById("typed-text").innerHTML = current.substring(0, j);
-      if (!isDeleting && j < current.length) j++;
-      else if (isDeleting && j > 0) j--;
-      if (j === current.length) { isDeleting = true; setTimeout(type, 1500); return; }
-      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % text.length; }
+      current = text[i];
+      let display = current.substring(0, j);
+      document.getElementById("typed-text").innerHTML = display;
+
+      if (!isDeleting && j < current.length) {
+        j++;
+      } else if (isDeleting && j > 0) {
+        j--;
+      }
+
+      if (j === current.length) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+        return;
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % text.length;
+      }
       setTimeout(type, isDeleting ? 50 : 100);
     }
     type();
   </script>
+
+
 </body>
+
 </html>
