@@ -5,192 +5,254 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IndoRyque Technologies</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand logo-text" href="#">
-        <span class="company-name"><span class="indo">Indo</span><span class="ryque">Ryque</span></span>
-        <div class="tagline">Technologies</div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
-          <li class="nav-item"><a class="nav-link" href="#success">Success Stories</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <!-- Logo image + text -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="IndoRyque Logo" class="logo-img me-2">
+      <div class="logo-text">
+        <span class="company-name">
+          <span class="indo">Indo</span><span class="ryque">Ryque</span>
+        </span>
+        <span class="tagline">Technologies</span>
       </div>
-    </div>
-  </nav>
+    </a>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container">
-      <h1>Welcome to IndoRyque Technologies</h1>
-      <p>Innovating the Future with Scalable, Secure and Smart Solutions</p>
-    </div>
-  </header>
+    <!-- Mobile Menu Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="menu-icon">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We are a next-generation software company delivering scalable, cloud-ready and innovative solutions. Our team thrives on challenges, building secure and future-proof technologies.</p>
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="#success">Success</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <i class="fas fa-code"></i>
-            <h5>Web Development</h5>
-            <p>Building responsive, fast, and secure web applications tailored to your business needs.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <i class="fas fa-mobile-alt"></i>
-            <h5>Mobile Apps</h5>
-            <p>Creating cross-platform mobile solutions for Android and iOS with React Native & Flutter.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <i class="fas fa-cloud"></i>
-            <h5>Cloud Solutions</h5>
-            <p>Deploying scalable, secure and high-availability cloud-native applications.</p>
-          </div>
+<!-- Hero -->
+<header class="hero d-flex align-items-center text-center">
+  <div class="container">
+    <h1 class="display-3 fw-bold mb-3">IndoRyque Technologies</h1>
+    <p class="lead text-sky" id="typed-text">Transforming Ideas into Reality</p>
+    <p class="mb-4">We craft intelligent, scalable, and impactful technology solutions that redefine possibilities.</p>
+    <a href="#services" class="btn btn-outline-light btn-lg me-3">Explore Services</a>
+    <a href="#contact" class="btn btn-sky btn-lg">Work With Us</a>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <div class="container text-center">
+    <h2>About Us</h2>
+    <p class="lead mb-4">
+      At <span class="text-sky">IndoRyque Technologies</span>, we believe technology is not just about writing code — it’s about creating transformation.
+    </p>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="bi bi-code-slash display-4 text-sky mb-3"></i>
+          <h5>Web Development</h5>
+          <p>Custom websites & portals with modern frameworks and responsive design.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Industries -->
-  <section id="industries">
-    <div class="container">
-      <h2>Industries We Serve</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <i class="fas fa-hospital"></i>
-          <h5>Healthcare</h5>
-          <p>Smart IoT-enabled healthcare applications improving patient care.</p>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="bi bi-phone display-4 text-sky mb-3"></i>
+          <h5>Mobile Apps</h5>
+          <p>Native & hybrid apps delivering seamless user experiences.</p>
         </div>
-        <div class="col-md-4">
-          <i class="fas fa-university"></i>
-          <h5>Education</h5>
-          <p>Modern e-learning platforms with real-time collaboration tools.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-car"></i>
-          <h5>Automotive</h5>
-          <p>IoT-based vehicle monitoring and predictive maintenance systems.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="bi bi-cloud-check display-4 text-sky mb-3"></i>
+          <h5>Cloud Solutions</h5>
+          <p>Secure and scalable cloud hosting, migration & DevOps services.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Success Stories -->
-  <section id="success">
-    <div class="container">
-      <h2>Success Stories</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card">
-            <h5>Senstra IoT Web Application</h5>
-            <p>A scalable IoT platform providing real-time device monitoring and analytics.</p>
-          </div>
+<!-- Industries -->
+<section id="industries">
+  <div class="container text-center">
+    <h2>Industries We Serve</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="card p-3"><i class="bi bi-heart-pulse text-sky mb-2"></i><h5>Healthcare</h5></div></div>
+      <div class="col-md-3"><div class="card p-3"><i class="bi bi-cash-stack text-sky mb-2"></i><h5>FinTech</h5></div></div>
+      <div class="col-md-3"><div class="card p-3"><i class="bi bi-book text-sky mb-2"></i><h5>Education</h5></div></div>
+      <div class="col-md-3"><div class="card p-3"><i class="bi bi-truck text-sky mb-2"></i><h5>Logistics</h5></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Success Stories -->
+<section id="success">
+  <div class="container">
+    <h2>Success Stories</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5>Senstra IoT Web Application</h5>
+          <p>IoT platform delivering real-time device monitoring and analytics.</p>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <h5>Pitmon Mobile App</h5>
-            <p>Bluetooth-based mobile application for secure and seamless device connectivity.</p>
-          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5>Pitmon Mobile App</h5>
+          <p>Bluetooth connectivity mobile solution.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Team -->
-  <section id="team">
-    <div class="container">
-      <h2>Meet Our Team</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="dummy1.jpg" class="img-fluid mb-3 rounded-circle" alt="CEO">
-            <h5>Harsh Gupta</h5>
-            <p>CEO, B.Tech Acropolis Technical Campus, M.Tech BITS Pilani, 8+ years of experience</p>
-          </div>
+<!-- Team -->
+<section id="team">
+  <div class="container">
+    <h2>Meet Our Team</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <img src="founder.png" alt="Harsh Gupta" class="rounded-circle mb-3" style="width:110px;height:110px;object-fit:cover;">
+          <h5>Harsh Gupta</h5>
+          <p class="text-muted">Founder & Visionary Leader — MTech BITS Pilani, 8+ years experience</p>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="dummy2.jpg" class="img-fluid mb-3 rounded-circle" alt="Team Member">
-            <h5>Team Member</h5>
-            <p>Experienced professional with expertise in software solutions and product design.</p>
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <img src="team1.jpg" alt="Team member" class="rounded-circle mb-3" style="width:110px;height:110px;object-fit:cover;">
+          <h5>Senior Developer</h5>
+          <p class="text-muted">Full-stack expert — React / Node / Cloud</p>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="dummy3.jpg" class="img-fluid mb-3 rounded-circle" alt="Team Member">
-            <h5>Team Member</h5>
-            <p>Focused on building scalable solutions and enhancing user experience.</p>
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <img src="team2.jpg" alt="Team member" class="rounded-circle mb-3" style="width:110px;height:110px;object-fit:cover;">
+          <h5>Project Manager</h5>
+          <p class="text-muted">Agile delivery & client success</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Internship -->
-  <section id="internship">
-    <div class="container">
-      <h2>Internship Program</h2>
-      <p>Join our 3-month internship and gain hands-on experience in React, Node.js, and Cloud Development.</p>
-      <iframe src="https://docs.google.com/forms/d/e/your-form-id/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!-- Internship -->
+<section id="internship">
+  <div class="container text-center">
+    <h2>Internship Opportunity</h2>
+    <div class="card p-3 mx-auto" style="max-width:920px;">
+      <iframe src="https://forms.gle/GAZCvYinEc4HiifLA" width="100%" height="700" frameborder="0" style="border-radius:10px;border:2px solid #00bfff;"></iframe>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="card contact-card mx-auto">
       <form>
         <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Your Name">
+          <input type="text" class="form-control" placeholder="Your Name" required>
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Your Email">
+          <input type="email" class="form-control" placeholder="Your Email" required>
         </div>
         <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
         </div>
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn btn-sky w-100">Send Message</button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 IndoRyque Technologies. All Rights Reserved.</p>
-  </footer>
+<!-- Footer -->
+<footer class="text-center py-4">
+  <p>&copy; 2025 IndoRyque Technologies. All Rights Reserved.</p>
+</footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  /* Typing effect */
+  const texts = ["Where Innovation Never Ends", "Transforming Ideas into Reality", "Your Digital Growth Partner"];
+  let part = 0, i = 0, isDeleting = false;
+  const typedEl = document.getElementById('typed-text');
+  function type() {
+    if (!typedEl) return;
+    const current = texts[part];
+    typedEl.textContent = current.substring(0, i);
+    if (!isDeleting && i < current.length) {
+      i++;
+      setTimeout(type, 100);
+    } else if (isDeleting && i > 0) {
+      i--;
+      setTimeout(type, 50);
+    } else {
+      if (!isDeleting) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+      } else {
+        isDeleting = false;
+        part = (part + 1) % texts.length;
+        setTimeout(type, 300);
+      }
+    }
+  }
+  setTimeout(type, 500);
+
+  /* Close navbar on link click (mobile) */
+  const navCollapse = document.getElementById('navbarNav');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navCollapse.classList.contains('show') && navbarToggler) {
+        navbarToggler.click();
+      }
+    });
+  });
+
+  /* Navbar shadow on scroll */
+  const navbar = document.querySelector('.navbar');
+  function onScroll() {
+    if (window.scrollY > 40) navbar.classList.add('navbar-scrolled');
+    else navbar.classList.remove('navbar-scrolled');
+  }
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+});
+</script>
+
 </body>
 </html>
