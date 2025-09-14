@@ -1,335 +1,154 @@
 /* ===============================
-   GLOBAL STYLES
+   GLOBAL
 ================================ */
 body {
   font-family: 'Poppins', sans-serif;
   background: #0d0d0d;
   color: #e0e0e0;
-  line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-  font-weight: 600;
-}
-
-p {
-  color: #cccccc;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-a:hover {
-  color: #66d9ff;
-}
-
-.logo-text {
-  line-height: 1.1;
-}
-
-.company-name {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.company-name .indo {
-  color: #ffffff; /* White for Indo */
-}
-
-.company-name .ryque {
-  color: #00bfff; /* Sky blue for Ryque */
-}
-
-.tagline {
-  font-size: 0.8rem;
-  color: #bbbbbb; /* Soft gray */
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-.logo-img {
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-/* ===============================
-   NAVBAR
-================================ */
-.navbar {
-  background: #000 !important;
-  padding: 12px 20px;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #00bfff !important;
-}
-
-.navbar-nav .nav-link {
-  color: #e0e0e0 !important;
-  margin: 0 10px;
-  font-weight: 500;
-  text-transform: none;
-  letter-spacing: .2px;
-}
-.navbar-nav .nav-link:hover {
-  color: #00bfff !important;
-}
-
-/* ===============================
-   HERO / HEADER
-================================ */
-.hero {
-  color: #fff;
-  text-align: center;
-  padding: 120px 20px;
-}
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
-}
-.hero p {
-  font-size: 1.2rem;
-  color: #cccccc;
-}
-
-/* small screen tweaks for hero */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; }
-  .logo-img { height: 48px !important; }
-}
-
-/* ===============================
-   ABOUT US
-================================ */
-#about {
-  background: #111;
-  padding: 80px 20px;
-  text-align: center;
-}
-#about p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  color: #cccccc;
-}
-
-#about i {
-  font-size: 2rem;
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-#about h5 {
+.text-sky {
   color: #00bfff;
 }
 
-/* ===============================
-   SERVICES
-================================ */
-#services {
-  background: #0d0d0d;
-  padding: 80px 20px;
-}
-#services h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#services .card {
-  background: #1c1c1c;
-  border: 1px solid #2a2a2a;
-  color: #e0e0e0;
-  padding: 25px;
-  border-radius: 14px;
-  text-align: center;
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-#services .card i {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
-  color: #00bfff;
-}
-
-#services .card h5 {
-  color: #00bfff;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-#services .card p {
-  color: #cccccc;
-}
-
-#services .card:hover {
-  background: #262626;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
-}
-
-/* ===============================
-   INDUSTRIES
-================================ */
-#industries {
-  background: #111;
-  padding: 80px 20px;
-  text-align: center;
-}
-#industries i {
-  font-size: 2rem;
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-#industries p {
-  color: #cccccc;
-}
-
-/* ===============================
-   SUCCESS STORIES
-================================ */
-#success {
-  background: #0d0d0d;
-  padding: 80px 20px;
-}
-#success .card {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  color: #e0e0e0;
-  padding: 25px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-#success .card:hover {
-  background: #222;
-  box-shadow: 0 6px 16px rgba(0, 191, 255, 0.2);
-}
-
-/* ===============================
-   TEAM
-================================ */
-#team {
-  background: #111;
-  padding: 80px 20px;
-  text-align: center;
-}
-#team .card {
-  background: #1c1c1c;
-  border: 1px solid #2a2a2a;
-  padding: 25px;
-  border-radius: 12px;
-  color: #e0e0e0;
-}
-#team .card h5 {
-  color: #00bfff;
-}
-
-/* make circular images consistent */
-#team .card img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
-/* ===============================
-   CONTACT
-================================ */
-#contact {
-  background: #0d0d0d;
-  padding: 80px 20px;
-}
-#contact form input,
-#contact form textarea {
-  background: #1c1c1c;
-  border: 1px solid #2a2a2a;
-  color: #fff;
-}
-#contact form input::placeholder,
-#contact form textarea::placeholder {
-  color: #888;
-}
-#contact button {
-  background: #00bfff;
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 6px;
-}
-#contact button:hover {
-  background: #0099cc;
-}
-
-/* submit button rounded larger */
-.submit-btn {
-  background: #00bfff;
-  border-radius: 30px;
-  padding: 12px 36px;
-  transition: transform .15s ease;
-}
-.submit-btn:hover { transform: translateY(-3px); }
-
-/* ===============================
-   INTERNSHIP
-================================ */
-#internship h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-#internship iframe {
-  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
-  transition: transform 0.3s ease;
-}
-
-#internship iframe:hover {
-  transform: scale(1.01);
-}
-
-/* ===============================
-   TECHNOLOGIES / CARDS
-================================ */
-.tech-card {
-  background: #1c1c1c;
-  border: 1px solid #2a2a2a;
-  padding: 25px;
-  border-radius: 12px;
-  transition: 0.3s;
-  color: #e0e0e0;
-}
-.tech-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,191,255,0.25);
-}
-
-/* ===============================
-   COMMON ENHANCEMENTS (buttons, highlights)
-================================ */
-.text-sky { color: #00bfff !important; }
 .text-gradient {
   background: linear-gradient(90deg, #00bfff, #66d9ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.info-card {
-  background: #1c1c1c;
-  border: 1px solid #2a2a2a;
-  padding: 25px;
-  border-radius: 14px;
+
+.btn-sky {
+  background: #00bfff;
+  color: #fff;
+  border-radius: 30px;
   transition: 0.3s;
-  color: #ccc;
 }
+
+.btn-sky:hover {
+  background: #0099cc;
+  transform: translateY(-2px);
+}
+
+.btn-outline-sky {
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-outline-sky:hover {
+  background: #00bfff;
+  color: #fff;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00bfff !important;
+  text-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+}
+
+/* ===============================
+   HERO
+================================ */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000 50%, #001f33 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===============================
+   CREATIVE INFO CARDS
+================================ */
+.info-card {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border: 1px solid #2a2a2a;
+  padding: 30px;
+  border-radius: 18px;
+  transition: all 0.4s ease;
+  color: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at top left, rgba(0,191,255,0.1), transparent 60%);
+  transform: rotate(25deg);
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.info-card:hover::before {
+  opacity: 1;
+}
+
+.info-card i {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #00bfff;
+  text-shadow: 0 0 15px rgba(0,191,255,0.5);
+}
+
+.info-card h5 {
+  color: #00bfff;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
 .info-card:hover {
-  background: #262626;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
+  background: linear-gradient(145deg, #111, #1c1c1c);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,191,255,0.3);
+}
+
+/* ===============================
+   TEAM CARDS - PREMIUM STYLE
+================================ */
+#team .card {
+  background: linear-gradient(160deg, #121212, #1e1e1e);
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0, 191, 255, 0.15);
+}
+
+#team .card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 40px rgba(0, 191, 255, 0.35);
+}
+
+#team .card img {
+  border-bottom: 3px solid #00bfff;
+  border-radius: 18px 18px 0 0;
+}
+
+#team h5 {
+  color: #00bfff;
+  font-weight: 700;
+}
+
+#team p {
+  font-size: 0.95rem;
+  color: #bbb;
 }
 
 /* ===============================
@@ -339,11 +158,13 @@ footer {
   background: #000;
   color: #aaa;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
 }
+
 footer a {
-  color: #ffffff;
+  color: #00bfff;
 }
+
 footer a:hover {
   color: #66d9ff;
 }
