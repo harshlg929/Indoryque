@@ -20,22 +20,25 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-      <!-- Logo Icon -->
-      <img src="logo-icon.png" alt="IndoRyque Logo" height="80" class="me-2">
-      
-      <!-- Text -->
-      <div class="logo-text">
-        <span class="company-name">
-          <span class="indo">Indo</span><span class="ryque">Ryque</span>
-        </span>
-        <br>
-        <small class="tagline">Technologies</small>
-      </div>
-    </a>
+        <!-- Logo Icon (image path unchanged) -->
+        <img src="logo-icon.png" alt="IndoRyque Logo" height="80" class="me-2 logo-img">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
+        <!-- Text -->
+        <div class="logo-text">
+          <span class="company-name">
+            <span class="indo">Indo</span><span class="ryque">Ryque</span>
+          </span>
+          <br>
+          <small class="tagline">Technologies</small>
+        </div>
+      </a>
+
+      <!-- Creative toggler icon -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-grid-3x3-gap fs-3 text-sky"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
@@ -51,8 +54,7 @@
   </nav>
 
   <!-- Hero -->
-  <section id="home" class="d-flex align-items-center text-center"
-    style="min-height:100vh; background:linear-gradient(135deg, #000 50%, #001f33 100%);">
+  <section id="home" class="d-flex align-items-center text-center hero" style="min-height:100vh; background:linear-gradient(135deg, #000 50%, #001f33 100%);">
     <div class="container">
       <h1 class="display-3 fw-bold mb-3">IndoRyque Technologies</h1>
       <p class="lead text-sky" id="typed-text">Transforming Ideas into Reali</p>
@@ -77,7 +79,7 @@
       <div class="row mt-5 g-4">
         <!-- Vision -->
         <div class="col-md-4">
-          <div class="p-4 bg-dark rounded shadow h-100">
+          <div class="p-4 bg-dark rounded shadow h-100 info-card">
             <i class="bi bi-eye display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Our Vision</h5>
             <p>
@@ -89,7 +91,7 @@
 
         <!-- Mission -->
         <div class="col-md-4">
-          <div class="p-4 bg-dark rounded shadow h-100">
+          <div class="p-4 bg-dark rounded shadow h-100 info-card">
             <i class="bi bi-bullseye display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Our Mission</h5>
             <p>
@@ -101,7 +103,7 @@
 
         <!-- Core Values -->
         <div class="col-md-4">
-          <div class="p-4 bg-dark rounded shadow h-100">
+          <div class="p-4 bg-dark rounded shadow h-100 info-card">
             <i class="bi bi-lightning-charge display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Our Values</h5>
             <p>
@@ -120,42 +122,42 @@
       <h2 class="fw-bold text-center text-sky mb-5">Our Services</h2>
       <div class="row g-4 text-center">
         <div class="col-md-4">
-          <div class="card bg-black border-0 shadow p-4 h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100 service-card">
             <i class="bi bi-code-slash display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Web Development</h5>
             <p>Custom websites &amp; portals with modern frameworks and responsive design.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card bg-black border-0 shadow p-4 h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100 service-card">
             <i class="bi bi-phone display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Mobile Apps</h5>
             <p>Native &amp; hybrid apps delivering seamless user experiences.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card bg-black border-0 shadow p-4 h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100 service-card">
             <i class="bi bi-cloud-check display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Cloud Solutions</h5>
             <p>Secure and scalable cloud hosting, migration &amp; DevOps services.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card bg-black border-0 shadow p-4 h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100 service-card">
             <i class="bi bi-shield-lock display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">Cybersecurity</h5>
             <p>Protecting your business with cutting-edge security practices.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card bg-black border-0 shadow p-4 h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100 service-card">
             <i class="bi bi-robot display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">AI &amp; Automation</h5>
             <p>Boost efficiency with AI-powered business automation and analytics.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card bg-black border-0 shadow p-4 h-100">
+          <div class="card bg-black border-0 shadow p-4 h-100 service-card">
             <i class="bi bi-cart-check display-4 text-sky mb-3"></i>
             <h5 class="fw-bold">E-Commerce</h5>
             <p>Complete e-commerce solutions from storefront to payment integration.</p>
@@ -186,7 +188,7 @@
     </div>
   </section>
 
-  <!-- Case Studies 
+  <!-- Case Studies (commented out as original) 
   <section id="case-studies" class="py-5">
     <div class="container">
       <h2 class="fw-bold text-center text-sky mb-5">Success Stories</h2>
@@ -217,6 +219,7 @@
         <!-- Harsh Gupta - Founder -->
         <div class="col-md-4">
           <div class="card bg-black border-0 shadow h-100 text-center shadow-lg">
+            <!-- image path unchanged -->
             <img src="founder.png" class="card-img-top rounded-circle p-3" alt="Harsh Gupta">
             <div class="card-body">
               <h5 class="card-title text-sky fw-bold">Harsh Gupta</h5>
@@ -263,7 +266,6 @@
     </div>
   </section>
 
-
   <!-- Technology -->
   <section id="technologies" class="py-5">
     <div class="container text-center">
@@ -277,7 +279,7 @@
 
         <!-- Frontend -->
         <div class="col-md-4">
-          <div class="p-4 bg-black rounded shadow h-100">
+          <div class="p-4 bg-black rounded shadow h-100 tech-card">
             <i class="bi bi-code-slash display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Frontend Development</h5>
             <p>
@@ -289,7 +291,7 @@
 
         <!-- Backend -->
         <div class="col-md-4">
-          <div class="p-4 bg-black rounded shadow h-100">
+          <div class="p-4 bg-black rounded shadow h-100 tech-card">
             <i class="bi bi-hdd-network display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Backend &amp; APIs</h5>
             <p>
@@ -301,7 +303,7 @@
 
         <!-- Mobile -->
         <div class="col-md-4">
-          <div class="p-4 bg-black rounded shadow h-100">
+          <div class="p-4 bg-black rounded shadow h-100 tech-card">
             <i class="bi bi-phone display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Mobile Development</h5>
             <p>
@@ -313,8 +315,8 @@
         </div>
 
         <!-- Cloud -->
-        <div class="col-md-6">
-          <div class="p-4 bg-black rounded shadow h-100">
+        <div class="col-md-6 mt-3">
+          <div class="p-4 bg-black rounded shadow h-100 tech-card">
             <i class="bi bi-cloud-check display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Cloud &amp; DevOps</h5>
             <p>
@@ -325,8 +327,8 @@
         </div>
 
         <!-- Emerging Tech -->
-        <div class="col-md-6">
-          <div class="p-4 bg-black rounded shadow h-100">
+        <div class="col-md-6 mt-3">
+          <div class="p-4 bg-black rounded shadow h-100 tech-card">
             <i class="bi bi-cpu display-5 text-sky mb-3"></i>
             <h5 class="fw-bold text-sky">Emerging Technologies</h5>
             <p>
@@ -340,8 +342,6 @@
     </div>
   </section>
 
-
-
   <!-- CTA Banner -->
   <section class="py-5 text-center" style="background:linear-gradient(135deg,#001f33,#000);">
     <div class="container">
@@ -350,43 +350,41 @@
     </div>
   </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 bg-black">
-  <div class="container">
-    <h2 class="fw-bold text-center text-sky mb-4">Get in Touch</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card bg-dark border-0 shadow-lg rounded-4 p-4">
-          <div class="card-body">
-            <form>
-              <div class="mb-3">
-                <input type="text" 
-                       class="form-control bg-black text-light border border-secondary rounded-3 py-3 px-3" 
-                       placeholder="Your Name" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" 
-                       class="form-control bg-black text-light border border-secondary rounded-3 py-3 px-3" 
-                       placeholder="Your Email" required>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control bg-black text-light border border-secondary rounded-3 py-3 px-3" 
-                          rows="4" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-lg px-5 fw-bold text-white" 
-                        style="background:#00bfff; border-radius:30px; transition:0.3s;">
-                  Send Message
-                </button>
-              </div>
-            </form>
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-black">
+    <div class="container">
+      <h2 class="fw-bold text-center text-sky mb-4">Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card bg-dark border-0 shadow-lg rounded-4 p-4">
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <input type="text"
+                    class="form-control bg-black text-light border border-secondary rounded-3 py-3 px-3"
+                    placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email"
+                    class="form-control bg-black text-light border border-secondary rounded-3 py-3 px-3"
+                    placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control bg-black text-light border border-secondary rounded-3 py-3 px-3"
+                    rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-lg px-5 fw-bold text-white submit-btn">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Internship Opportunity Section -->
   <section id="internship" class="py-5 text-light">
@@ -410,7 +408,6 @@
     </div>
   </section>
 
-
   <!-- Footer -->
   <footer class="bg-black text-center py-5">
     <div class="container">
@@ -432,6 +429,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Typing Effect -->
   <script>
     const text = ["Where Innovation Never Ends", "Transforming Ideas into Reality", "Your Digital Growth Partner"];
@@ -463,7 +461,6 @@
     }
     type();
   </script>
-
 
 </body>
 
