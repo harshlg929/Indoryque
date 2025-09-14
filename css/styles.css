@@ -11,6 +11,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 p {
@@ -23,7 +24,7 @@ a {
   transition: 0.3s;
 }
 a:hover {
-  color: #66d9ff;
+  color: #00bfff;
 }
 
 .logo-text {
@@ -45,11 +46,10 @@ a:hover {
 
 .tagline {
   font-size: 0.8rem;
-  color: #bbbbbb; /* Soft gray */
+  color: #bbbbbb;
   letter-spacing: 1px;
   font-weight: 400;
 }
-
 
 /* ===============================
    NAVBAR
@@ -93,42 +93,26 @@ a:hover {
 }
 
 /* ===============================
-   ABOUT US
+   SECTIONS (Unified)
 ================================ */
-#about {
-  background: #111;
+section {
   padding: 80px 20px;
   text-align: center;
+  background: #0d0d0d;
 }
-#about p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  color: #cccccc;
-}
-
-#about i {
+section h2 {
   font-size: 2rem;
+  margin-bottom: 40px;
   color: #00bfff;
-  margin-bottom: 10px;
-}
-
-#about h5 {
-  color: #00bfff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* ===============================
-   SERVICES
+   CARDS (Unified Style)
 ================================ */
-#services {
-  background: #0d0d0d;
-  padding: 80px 20px;
-}
-#services h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#services .card {
+.card {
   background: #1c1c1c;
   border: 1px solid #2a2a2a;
   color: #e0e0e0;
@@ -138,97 +122,47 @@ a:hover {
   transition: all 0.3s ease;
   height: 100%;
 }
-
-#services .card i {
+.card:hover {
+  background: #262626;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
+}
+.card h5 {
+  color: #00bfff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #cccccc;
+}
+.card i {
   font-size: 2.5rem;
   margin-bottom: 12px;
   color: #00bfff;
 }
 
-#services .card h5 {
-  color: #00bfff;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-#services .card p {
-  color: #cccccc;
-}
-
-#services .card:hover {
-  background: #262626;
-  transform: translateY(-5px);
+/* ===============================
+   INTERNSHIP (Google Form)
+================================ */
+#internship iframe {
   box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
-}
-
-/* ===============================
-   INDUSTRIES
-================================ */
-#industries {
-  background: #111;
-  padding: 80px 20px;
-  text-align: center;
-}
-#industries i {
-  font-size: 2rem;
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-#industries p {
-  color: #cccccc;
-}
-
-/* ===============================
-   SUCCESS STORIES
-================================ */
-#success {
-  background: #0d0d0d;
-  padding: 80px 20px;
-}
-#success .card {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  color: #e0e0e0;
-  padding: 25px;
+  transition: transform 0.3s ease;
   border-radius: 12px;
-  transition: all 0.3s ease;
 }
-#success .card:hover {
-  background: #222;
-  box-shadow: 0 6px 16px rgba(0, 191, 255, 0.2);
-}
-
-/* ===============================
-   TEAM
-================================ */
-#team {
-  background: #111;
-  padding: 80px 20px;
-  text-align: center;
-}
-#team .card {
-  background: #1c1c1c;
-  border: 1px solid #2a2a2a;
-  padding: 25px;
-  border-radius: 12px;
-  color: #e0e0e0;
-}
-#team .card h5 {
-  color: #00bfff;
+#internship iframe:hover {
+  transform: scale(1.01);
 }
 
 /* ===============================
    CONTACT
 ================================ */
-#contact {
-  background: #0d0d0d;
-  padding: 80px 20px;
-}
 #contact form input,
 #contact form textarea {
   background: #1c1c1c;
   border: 1px solid #2a2a2a;
   color: #fff;
+  border-radius: 6px;
+  padding: 10px;
 }
 #contact form input::placeholder,
 #contact form textarea::placeholder {
@@ -246,24 +180,6 @@ a:hover {
   background: #0099cc;
 }
 
-
-#internship h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-#internship iframe {
-  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
-  transition: transform 0.3s ease;
-}
-
-#internship iframe:hover {
-  transform: scale(1.01);
-}
-
-
-
 /* ===============================
    FOOTER
 ================================ */
@@ -277,5 +193,5 @@ footer a {
   color: #ffffff;
 }
 footer a:hover {
-  color: #66d9ff;
+  color: #00bfff;
 }
