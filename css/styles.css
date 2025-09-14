@@ -1,75 +1,281 @@
-/* Global */
+/* ===============================
+   GLOBAL STYLES
+================================ */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0A1F44; /* Navy background */
-  color: #EAEAEA;
+  background: #0d0d0d;
+  color: #e0e0e0;
   line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6 { color: #ffffff; font-weight: 600; }
-p { color: #cccccc; }
-.text-sky { color: #00BFFF !important; }
 
-/* Navbar */
-.custom-navbar {
-  background: #0A1F44 !important;
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+p {
+  color: #cccccc;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #66d9ff;
+}
+
+.logo-text {
+  line-height: 1.1;
+}
+
+.company-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.company-name .indo {
+  color: #ffffff; /* White for Indo */
+}
+
+.company-name .ryque {
+  color: #00bfff; /* Sky blue for Ryque */
+}
+
+.tagline {
+  font-size: 0.8rem;
+  color: #bbbbbb; /* Soft gray */
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+  background: #000 !important;
   padding: 12px 20px;
 }
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00bfff !important;
+}
+
 .navbar-nav .nav-link {
-  color: #EAEAEA !important;
+  color: #e0e0e0 !important;
   margin: 0 10px;
   font-weight: 500;
 }
-.navbar-nav .nav-link:hover { color: #00BFFF !important; }
-.logo-text { line-height: 1.1; }
-.company-name { font-size: 1.4rem; font-weight: 700; }
-.company-name .indo { color: #fff; }
-.company-name .ryque { color: #00BFFF; }
-.tagline { font-size: 0.8rem; color: #EAEAEA; }
-
-/* Hero */
-.hero {
-  background: #0A1F44;
-  padding: 120px 20px;
-  color: #fff;
+.navbar-nav .nav-link:hover {
+  color: #00bfff !important;
 }
-.hero h1 { font-size: 3rem; }
-.hero p { font-size: 1.2rem; }
 
-/* Sections */
-.section-bg { background: #112B57; }
-.info-card {
-  background: #142F63;
-  border: 1px solid #1F3C77;
+/* ===============================
+   HERO / HEADER
+================================ */
+.hero {
+  background: linear-gradient(to right, #0d0d0d, #1c1c1c);
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* ===============================
+   ABOUT US
+================================ */
+#about {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+#about p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #cccccc;
+}
+
+#about i {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+#about h5 {
+  color: #00bfff;
+}
+
+/* ===============================
+   SERVICES
+================================ */
+#services {
+  background: #0d0d0d;
+  padding: 80px 20px;
+}
+#services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#services .card {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  color: #e0e0e0;
   padding: 25px;
   border-radius: 14px;
+  text-align: center;
   transition: all 0.3s ease;
-  color: #EAEAEA;
+  height: 100%;
 }
-.info-card:hover {
-  background: #1F3C77;
+
+#services .card i {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #00bfff;
+}
+
+#services .card h5 {
+  color: #00bfff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#services .card p {
+  color: #cccccc;
+}
+
+#services .card:hover {
+  background: #262626;
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
 }
 
-/* Contact */
-#contact input, #contact textarea {
-  background: #142F63;
-  border: 1px solid #1F3C77;
+/* ===============================
+   INDUSTRIES
+================================ */
+#industries {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+#industries i {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+#industries p {
+  color: #cccccc;
+}
+
+/* ===============================
+   SUCCESS STORIES
+================================ */
+#success {
+  background: #0d0d0d;
+  padding: 80px 20px;
+}
+#success .card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #e0e0e0;
+  padding: 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+#success .card:hover {
+  background: #222;
+  box-shadow: 0 6px 16px rgba(0, 191, 255, 0.2);
+}
+
+/* ===============================
+   TEAM
+================================ */
+#team {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+#team .card {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  padding: 25px;
+  border-radius: 12px;
+  color: #e0e0e0;
+}
+#team .card h5 {
+  color: #00bfff;
+}
+
+/* ===============================
+   CONTACT
+================================ */
+#contact {
+  background: #0d0d0d;
+  padding: 80px 20px;
+}
+#contact form input,
+#contact form textarea {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
   color: #fff;
 }
-#contact input::placeholder, #contact textarea::placeholder { color: #aaa; }
-.btn-sky {
-  background: #00BFFF;
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #888;
+}
+#contact button {
+  background: #00bfff;
   border: none;
   color: #fff;
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 6px;
 }
-.btn-sky:hover { background: #0099CC; }
+#contact button:hover {
+  background: #0099cc;
+}
 
-/* Footer */
-.custom-footer {
-  background: #0A1F44;
+
+#internship h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#internship iframe {
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.25);
+  transition: transform 0.3s ease;
+}
+
+#internship iframe:hover {
+  transform: scale(1.01);
+}
+
+
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  background: #000;
   color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #ffffff;
+}
+footer a:hover {
+  color: #66d9ff;
 }
