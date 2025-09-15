@@ -589,37 +589,43 @@
     <!-- Typing Effect -->
     <script>
       const text = [
-        "Where Innovation Never Ends",
-        "Transforming Ideas into Reality",
-        "Your Digital Growth Partner",
-      ];
-      let i = 0;
-      let j = 0;
-      let current = "";
-      let isDeleting = false;
+  "Where Innovation Never Ends",
+  "Transforming Ideas into Reality",
+  "Your Digital Growth Partner",
+];
 
-      function type() {
-        current = text[i];
-        let display = current.substring(0, j);
-        document.getElementById("typed-text").innerHTML = display;
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
 
-        if (!isDeleting && j < current.length) {
-          j++;
-        } else if (isDeleting && j > 0) {
-          j--;
-        }
+function type() {
+  current = text[i];
+  let display = current.substring(0, j);
+  document.getElementById("typed-text").innerHTML = display;
 
-        if (j === current.length) {
-          isDeleting = true;
-          setTimeout(type, 1500);
-          return;
-        } else if (isDeleting && j === 0) {
-          isDeleting = false;
-          i = (i + 1) % text.length;
-        }
-        setTimeout(type, isDeleting ? 50 : 100);
-      }
-      type();
+  if (!isDeleting && j < current.length) {
+    j++;
+  } else if (isDeleting && j > 0) {
+    j--;
+  }
+
+  if (j === current.length && !isDeleting) {
+    // Finished typing → wait longer before deleting
+    isDeleting = true;
+    setTimeout(type, 2000); // show full text for 2 sec
+    return;
+  } else if (isDeleting && j === 0) {
+    // Finished deleting → go to next word
+    isDeleting = false;
+    i = (i + 1) % text.length;
+  }
+
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+
 
       document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
         link.addEventListener("click", () => {
