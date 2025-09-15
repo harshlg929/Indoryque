@@ -2,7 +2,7 @@
    GLOBAL
 ================================ */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #0d0d0d;
   color: #e0e0e0;
 }
@@ -44,6 +44,115 @@ body {
 /* ===============================
    NAVBAR
 ================================ */
+
+/* Brand / logo text */
+.logo-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-text .company-name {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  line-height: 1.2;
+  vertical-align: middle;
+  font-family: "Orbitron", sans-serif; /* Futuristic font */
+}
+
+/* Indo (Bold Blue) */
+.logo-text .indo {
+  color: #00bfff; /* Bootstrap primary blue */
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(13, 110, 253, 0.2);
+  transition: all 0.3s ease-in-out;
+  animation: indoIn 0.6s ease both;
+}
+
+/* Ryque (Elegant White) */
+.logo-text .ryque {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+  animation: ryqueIn 0.6s ease both;
+  animation-delay: 0.15s;
+}
+
+/* Hover effects */
+.logo-text .indo:hover {
+  color: #3d8bfd;
+  transform: scale(1.05);
+  text-shadow: 0 0 12px rgba(13, 110, 253, 0.8);
+}
+.logo-text .ryque:hover {
+  color: #f5f5f5;
+  transform: scale(1.05);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}
+
+/* Tagline */
+.logo-text .tagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #d1d9e6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  display: inline-block;
+}
+
+/* Logo image animation */
+.logo-img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Entrance animations */
+@keyframes indoIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes ryqueIn {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .logo-text .company-name {
+    font-size: 1.5rem;
+  }
+  .logo-img {
+    height: 60px;
+  }
+  .logo-text .tagline {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+.navbar-brand .logo-text {
+  font-size: 0.75rem;
+}
+.navbar-brand img {
+  height: 50px;
+}
+
+
 .navbar-nav .nav-link {
   color: #e0e0e0 !important;
   margin: 0 10px;
@@ -83,7 +192,7 @@ body {
   font-size: 3rem;
   margin-bottom: 15px;
   color: #00bfff;
-  text-shadow: 0 0 15px rgba(0,191,255,0.5);
+  text-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
 }
 
 #services .info-card h5 {
@@ -91,7 +200,6 @@ body {
   font-weight: 700;
   color: #00bfff;
 }
-
 
 /* ===============================
    CREATIVE INFO CARDS
@@ -114,7 +222,11 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at top left, rgba(0,191,255,0.1), transparent 60%);
+  background: radial-gradient(
+    circle at top left,
+    rgba(0, 191, 255, 0.1),
+    transparent 60%
+  );
   transform: rotate(25deg);
   transition: opacity 0.5s ease;
   opacity: 0;
@@ -128,7 +240,7 @@ body {
   font-size: 2.8rem;
   margin-bottom: 15px;
   color: #00bfff;
-  text-shadow: 0 0 15px rgba(0,191,255,0.5);
+  text-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
 }
 
 .info-card h5 {
@@ -141,7 +253,7 @@ body {
 .info-card:hover {
   background: linear-gradient(145deg, #111, #1c1c1c);
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0,191,255,0.3);
+  box-shadow: 0 15px 35px rgba(0, 191, 255, 0.3);
 }
 
 /* ===============================
@@ -174,6 +286,63 @@ body {
 #team p {
   font-size: 0.95rem;
   color: #bbb;
+}
+
+/* Team card */
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.4);
+}
+
+/* Team images */
+.team-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0d6efd;
+  transition: transform 0.3s ease;
+}
+.team-card:hover .team-img {
+  transform: scale(1.05);
+}
+
+/* Text styling */
+.team-info h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.team-info p {
+  margin-bottom: 0.4rem;
+}
+
+/* Social icons */
+.social-icons a {
+  color: #0d6efd;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsive (stack vertically on small screens) */
+@media (max-width: 768px) {
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .team-img {
+    margin-bottom: 12px;
+  }
+  .team-info {
+    margin-left: 0 !important;
+  }
 }
 
 /* ===============================
