@@ -324,7 +324,7 @@ body {
 }
 
 /* Responsive (stack vertically on small screens) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
   .team-card {
     flex-direction: column;
     text-align: center;
@@ -335,7 +335,7 @@ body {
   .team-info {
     margin-left: 0 !important;
   }
-}
+/* } */
 
 /* ===============================
    FOOTER
