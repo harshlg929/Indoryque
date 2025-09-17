@@ -18,7 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -300,7 +299,6 @@
     </div>
   </section>
     -->
-  
 
     <!-- Team -->
     <section id="team" class="py-5">
@@ -485,7 +483,11 @@
           <div class="col-md-8">
             <div class="card bg-dark border-0 shadow-lg rounded-4 p-4">
               <div class="card-body">
-                <form action="mailto:hr@indoryque.in" method="post" enctype="text/plain">
+                <form
+                  action="mailto:hr@indoryque.in"
+                  method="post"
+                  enctype="text/plain"
+                >
                   <div class="mb-3">
                     <input
                       type="text"
@@ -580,6 +582,24 @@
       
         </div>
       -->
+        <div class="mb-3">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white mx-2"
+          >
+            <i class="bi bi-twitter fs-4"></i>
+          </a>
+          <a
+            href="https://linkedin.com/company/indoryque-technologies"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white mx-2"
+          >
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </div>
         <p class="mt-4">
           &copy; 2025 IndoRyque Technologies.<br />
           All Rights Reserved.
@@ -593,43 +613,42 @@
     <!-- Typing Effect -->
     <script>
       const text = [
-  "Where Innovation Never Ends  ",
-  "Transforming Ideas into Reality  ",
-  "Your Digital Growth Partner  ",
-];
+        "Where Innovation Never Ends  ",
+        "Transforming Ideas into Reality  ",
+        "Your Digital Growth Partner  ",
+      ];
 
-let i = 0;
-let j = 0;
-let current = "";
-let isDeleting = false;
+      let i = 0;
+      let j = 0;
+      let current = "";
+      let isDeleting = false;
 
-function type() {
-  current = text[i];
-  let display = current.substring(0, j);
-  document.getElementById("typed-text").innerHTML = display;
+      function type() {
+        current = text[i];
+        let display = current.substring(0, j);
+        document.getElementById("typed-text").innerHTML = display;
 
-  if (!isDeleting && j < current.length) {
-    j++;
-  } else if (isDeleting && j > 0) {
-    j--;
-  }
+        if (!isDeleting && j < current.length) {
+          j++;
+        } else if (isDeleting && j > 0) {
+          j--;
+        }
 
-  if (j === current.length && !isDeleting) {
-    // Finished typing → wait longer before deleting
-    isDeleting = true;
-    setTimeout(type, 2000); // show full text for 2 sec
-    return;
-  } else if (isDeleting && j === 0) {
-    // Finished deleting → go to next word
-    isDeleting = false;
-    i = (i + 1) % text.length;
-  }
+        if (j === current.length && !isDeleting) {
+          // Finished typing → wait longer before deleting
+          isDeleting = true;
+          setTimeout(type, 2000); // show full text for 2 sec
+          return;
+        } else if (isDeleting && j === 0) {
+          // Finished deleting → go to next word
+          isDeleting = false;
+          i = (i + 1) % text.length;
+        }
 
-  setTimeout(type, isDeleting ? 50 : 100);
-}
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
 
-type();
-
+      type();
 
       document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
         link.addEventListener("click", () => {
